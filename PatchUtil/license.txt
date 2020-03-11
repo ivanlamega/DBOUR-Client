@@ -1,0 +1,53 @@
+RTPatch(r) Pro 6.5
+For use with MICROSOFT(r) OPERATING SYSTEMS
+Windows NT/2000/XP; Windows 9x/Me
+
+POCKET SOFT's SINGLE DEVELOPER SOFTWARE LICENSE AGREEMENT
+
+IMPORTANT - READ CAREFULLY. This is a License Agreement between you, the SINGLE DEVELOPER, and POCKET SOFT, INC. (POCKET SOFT).  PLEASE READ THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT CAREFULLY.  By installing, copying, or otherwise using RTPatch Pro, you agree to be bound by the terms of this Agreement.  If you do not agree to the terms of this Agreement, then DO NOT install or use RTPatch Pro; you may, however, return the unused software and all related materials, within thirty days of purchase, to the location at which you acquired it for a refund of the license fee.
+
+
+1. LICENSE GRANT.  POCKET SOFT grants to you and you accept, a non-exclusive license to use one copy (identified by the serial number on the License Agreement and on your CD holder) of POCKET SOFT's product, RTPatch Pro, hereinafter (RTPatch), for use on a single computer (one Patch Build seat). RTPatch may be placed on a network as long as there is no possibility of its being used by more than one user at one location.  You may not use RTPatch on more than one computer at any given time unless additional Licenses for the additional computers (or additional users on a network) are purchased.
+
+The RTPatch Pro product is licensed, not sold.  The license fees paid by you are paid in consideration of the license granted under this License Agreement.
+
+2. POCKET SOFT RIGHTS. You acknowledge and agree that RTPatch is a proprietary product of POCKET SOFT, protected under US copyright law, international treaty provisions, and trade secret laws of general applicability.  You further acknowledge and agree that all rights, title, and interest in and to RTPatch are and shall remain with POCKET SOFT.
+
+3. DEVELOPER'S DISTRIBUTION RIGHTS.  You have a royalty-free right to reproduce and distribute RTPatch files and RTPatch-generated files, except as specified in Sections 4 and 5 below, provided that you agree to indemnify, hold harmless, and defend POCKET SOFT from and against any claims or lawsuits, including attorney's fees, that arise or result from the use or distribution of your software product.
+
+4. NONREDISTRIBUTABLE FILES
+
+You may not reproduce or redistribute the following files:PATCHBLD.EXE, PBLD-DX.EXE, PBLD-V16.EXE, DOS4GW.EXE, PATCHBLD.DAT, PATCHBLD.HLP, BUILDWIZ.EXE, PBIND.EXE, UNPBIND.EXE, SAFECTL.EXE, MAKESAFE.EXE, SAFETEST.EXE, RSTPREP.EXE. ARTPMNGR.EXE, or MAKESIG.EXE.
+
+5. FURTHER DISTRIBUTION RESTRICTION. Reproduction and distribution of RTPatch and RTPatch-generated files is limited to your Distribution Level for Patch Apply Software, as identified by the Serial Number on the License Agreement and on your CD holder. An End-User PC is defined as a PC which receives Patch Apply Software, or is a Client PC to a Server which receives Patch Apply Software.
+
+6. NO USE OF RTPATCH FOR CONSULTING UNLESS CLIENT TO BE SERVED ALSO HAS RTPATCH LICENSE. You may not use RTPatch (or any part thereof) in connection with the provision of consulting or other services, whether for value or otherwise, on behalf of any third party who does not hold a current valid RTPatch License Agreement. This agreement contains no right to sublicense RTPatch (or any part thereof), nor to operate any bureau or other such facilities which would allow third parties access to, or use of, RTPatch, excepting where such third parties hold a current valid RTPatch License Agreement.
+
+7. NO USE TO CREATE COMPETING PRODUCTS. You may not use RTPatch (or any part thereof) to develop products competitive with RTPatch.
+
+8. NOT FOR RESALE SOFTWARE. If RTPatch is labeled "Not for Resale" or "Evaluation Copy" then, notwithstanding other sections of this License Agreement, you may not use RTPatch for commercial purposes nor sell, or otherwise transfer it for value. Commercial purposes include the use of RTPatch in the creation of publicly distributed computer software.
+
+9. OTHER RESTRICTIONS. You may not lease, rent, sublicense, or lend RTPatch.  You may not disassemble, decompile, or reverse engineer RTPatch.
+
+
+10. LIMITED WARRANTY.  POCKET SOFT warrants that the original program CD-ROM, in which RTPatch is embedded, and the associated media, "online" or electronic documentation, and printed materials included with the product, shall, for a period of 30 days from the date of commencement of the License Agreement (referred to as the Warranty Period), be free from defects in material and workmanship. POCKET SOFT further warrants that during the Warranty Period RTPatch shall operate substantially in accordance with the functional specifications in the "online" and electronic User's Documentation. If, during the warranty Period, a defect in RTPatch appears, you may return RTPatch to POCKET SOFT for either a replacement or, if so elected by POCKET SOFT, refund of amounts paid by you under this License Agreement.  You agree that the foregoing constitutes your sole and exclusive remedy for breach by POCKET SOFT of any warranties made under this Agreement.  EXCEPT FOR THE WARRANTIES SET FORTH ABOVE, RTPATCH IS LICENSED "AS IS", AND POCKET SOFT DISCLAIMS ANY AND ALL OTHER WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+11. LIMITATION OF LIABILITY.  POCKET SOFT's cumulative liability to you or any other party for any loss or damages resulting from any claims, demands, or actions arising out of or relating to this Agreement shall not exceed the license fee paid at the time of purchase, for the use of RTPatch.  In no event shall POCKET SOFT be liable for any indirect, incidental, consequential, special, or exemplary damages or lost profits, even if POCKET SOFT has been advised of the possibility of such damages.  SOME STATES DO NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
+
+12. GOVERNING LAW.  This License Agreement shall be construed and governed in accordance with the laws of the State of Texas.
+
+13. SEVERABILITY.  Should any term of this License Agreement be declared void or unenforceable by any court of competent jurisdiction, such declaration shall have no effect on the remaining term hereof.
+
+14. TRADEMARK.  RTPatch is a registered trademark of POCKET SOFT. No right, license, or interest to such trademark is granted hereunder, and you agree that no such right, license, or interest shall be asserted by you with respect to such trademark.
+
+15. COSTS OF LITIGATION.  If any action is brought by either party to this License Agreement against the other party regarding the subject matter hereof, the prevailing party shall be entitled to recover, in addition to any other relief granted, reasonable attorney fees and expenses of litigation.
+
+16. NO WAIVER.  The failure of either party to enforce any rights granted hereunder or to take action against the other party in the event of any breach hereunder shall not be deemed a waiver by that party as to subsequent enforcement of rights or the subsequent actions in the event of future breaches.
+
+17. U.S. GOVERNMENT RESTRICTED RIGHTS.  The Software Product and documentation (including printed and electronic) are provided with RESTRICTED RIGHTS.  Use, duplication, or disclosure by the U.S. Government is subject to restrictions as set forth in subparagraph C(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.227-7013 or subparagraphs (c)(1) and (2) of the Commercial Computer Software Restricted Rights at 48 CFR 52.227-19, as applicable.  Manufacturer is:  Pocket Soft, Inc., 7676 Hillmont, #195, Houston, TX 77040 USA.
+
+POCKET SOFT, INC.  							Phone:    713-460-5600
+P. O. Box 821049      							Fax:      713-460-2651                  
+Houston, TX USA 77282-1049    						support@pocketsoft.com          
+
+NR-013102(U)

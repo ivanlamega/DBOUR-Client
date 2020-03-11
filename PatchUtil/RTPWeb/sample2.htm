@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<TITLE>Sample HTML for Web RTPatch Control - HTML (Scriptless) Sample</TITLE>
+</HEAD>
+<BODY>
+
+
+
+<OBJECT ID="PatchCtl" 
+ CLASSID="CLSID:5D8844F9-1CB8-11D2-A0A0-00600859EB9F"
+ CODEBASE="ftp://your.server.com/patchx.cab#version=6,50,0,1"
+ HEIGHT=80
+ WIDTH=320
+>
+<PARAM NAME=PatchURL VALUE=ftp://your.server.com/patchw32.dll>
+<PARAM NAME=PatchFile VALUE=ftp://your.server.com/patch.rtp>
+<PARAM NAME=Silent VALUE=TRUE>
+<PARAM NAME=LogFile VALUE=TRUE>
+<PARAM NAME=LogFileName VALUE=rtptest.log>
+<PARAM NAME=LogFileDir VALUE=3>
+<PARAM NAME=SearchAll VALUE=TRUE>
+<PARAM NAME=FailureCaption VALUE="Failure occurred.">
+<PARAM NAME=CompleteCaption VALUE="Update completed.">
+<PARAM NAME=WaitCaption VALUE="Please wait...">
+<EMBED TYPE="application/x-RTPatch-File"
+  PLUGINURL="ftp://your.server.com/nppatch.jar"
+  HEIGHT="80"
+  WIDTH="320"
+  PatchURL="ftp://your.server.com/patchw32.dll"
+  PatchFile="ftp://your.server.com/patch.rtp"
+  Silent="TRUE"
+  LogFile="TRUE"
+  LogFileName="rtptest.log"
+  LogFileDir="3"
+  SearchAll="TRUE"
+  FailureCaption="Failure occurred."
+  CompleteCaption="Update completed."
+  WaitCaption="Please wait..."
+>
+</EMBED>
+</OBJECT>
+
+
+
+</BODY>
+</HTML>
+

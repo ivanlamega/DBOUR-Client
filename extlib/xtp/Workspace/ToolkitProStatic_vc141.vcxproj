@@ -1,0 +1,2856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Dynamic Debug|Win32">
+      <Configuration>Dynamic Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dynamic Debug|x64">
+      <Configuration>Dynamic Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dynamic Release|Win32">
+      <Configuration>Dynamic Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dynamic Release|x64">
+      <Configuration>Dynamic Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dynamic Unicode Debug|Win32">
+      <Configuration>Dynamic Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dynamic Unicode Debug|x64">
+      <Configuration>Dynamic Unicode Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dynamic Unicode Release|Win32">
+      <Configuration>Dynamic Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dynamic Unicode Release|x64">
+      <Configuration>Dynamic Unicode Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Static Debug|Win32">
+      <Configuration>Static Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Static Debug|x64">
+      <Configuration>Static Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Static Release|Win32">
+      <Configuration>Static Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Static Release|x64">
+      <Configuration>Static Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Static Unicode Debug|Win32">
+      <Configuration>Static Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Static Unicode Debug|x64">
+      <Configuration>Static Unicode Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Static Unicode Release|Win32">
+      <Configuration>Static Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Static Unicode Release|x64">
+      <Configuration>Static Unicode Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Codejock.ToolkitPro.Static</ProjectName>
+    <ProjectGuid>{58631918-9416-9714-6181-456383649396}</ProjectGuid>
+    <RootNamespace>Codejock.ToolkitPro.Static</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+    <OutDir>.\Dynamic_Release/vc141\</OutDir>
+    <IntDir>.\Dynamic_Release/vc141\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+    <OutDir>.\Dynamic_Release/vc141x64\</OutDir>
+    <IntDir>.\Dynamic_Release/vc141x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+    <OutDir>.\Static_Release/vc141\</OutDir>
+    <IntDir>.\Static_Release/vc141\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+    <OutDir>.\Static_Release/vc141x64\</OutDir>
+    <IntDir>.\Static_Release/vc141x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+    <OutDir>.\Static_Unicode_Debug/vc141\</OutDir>
+    <IntDir>.\Static_Unicode_Debug/vc141\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+    <OutDir>.\Static_Unicode_Debug/vc141x64\</OutDir>
+    <IntDir>.\Static_Unicode_Debug/vc141x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+    <OutDir>.\Dynamic_Debug/vc141\</OutDir>
+    <IntDir>.\Dynamic_Debug/vc141\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+    <OutDir>.\Dynamic_Debug/vc141x64\</OutDir>
+    <IntDir>.\Dynamic_Debug/vc141x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+    <OutDir>.\Dynamic_Unicode_Debug/vc141\</OutDir>
+    <IntDir>.\Dynamic_Unicode_Debug/vc141\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+    <OutDir>.\Dynamic_Unicode_Debug/vc141x64\</OutDir>
+    <IntDir>.\Dynamic_Unicode_Debug/vc141x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+    <OutDir>.\Static_Unicode_Release/vc141\</OutDir>
+    <IntDir>.\Static_Unicode_Release/vc141\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+    <OutDir>.\Static_Unicode_Release/vc141x64\</OutDir>
+    <IntDir>.\Static_Unicode_Release/vc141x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+    <OutDir>..\..\lib\</OutDir>
+    <IntDir>.\Static_Debug/vc141\</IntDir>
+    <IncludePath>$(WindowsSDK_IncludePath);D:\KingdomWorld\boost_lib\boost_1_36_0;C:\Java\JDK\include;C:\DXSDK\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+    <OutDir>.\Static_Debug/vc141x64\</OutDir>
+    <IntDir>.\Static_Debug/vc141x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+    <OutDir>.\Dynamic_Unicode_Release/vc141\</OutDir>
+    <IntDir>.\Dynamic_Unicode_Release/vc141\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+    <OutDir>.\Dynamic_Unicode_Release/vc141x64\</OutDir>
+    <IntDir>.\Dynamic_Unicode_Release/vc141x64\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Dynamic_Release/vc141/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Dynamic_Release/vc141/</AssemblerListingLocation>
+      <ObjectFileName>.\Dynamic_Release/vc141/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Dynamic_Release/vc141/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141/ToolkitPro1521vc141DS.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Dynamic_Release/vc141x64/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Dynamic_Release/vc141x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Dynamic_Release/vc141x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Dynamic_Release/vc141x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141x64/ToolkitPro1521vc141x64DS.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Static_Release/vc141/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Static_Release/vc141/</AssemblerListingLocation>
+      <ObjectFileName>.\Static_Release/vc141/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Static_Release/vc141/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141/ToolkitPro1521vc141S.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Static_Release/vc141x64/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Static_Release/vc141x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Static_Release/vc141x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Static_Release/vc141x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141x64/ToolkitPro1521vc141x64S.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Static_Unicode_Debug/vc141/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Static_Unicode_Debug/vc141/</AssemblerListingLocation>
+      <ObjectFileName>.\Static_Unicode_Debug/vc141/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Static_Unicode_Debug/vc141/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141/ToolkitPro1521vc141SUD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Static_Unicode_Debug/vc141x64/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Static_Unicode_Debug/vc141x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Static_Unicode_Debug/vc141x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Static_Unicode_Debug/vc141x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141x64/ToolkitPro1521vc141x64SUD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Dynamic_Debug/vc141/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Dynamic_Debug/vc141/</AssemblerListingLocation>
+      <ObjectFileName>.\Dynamic_Debug/vc141/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Dynamic_Debug/vc141/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141/ToolkitPro1521vc141DSD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Dynamic_Debug/vc141x64/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Dynamic_Debug/vc141x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Dynamic_Debug/vc141x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Dynamic_Debug/vc141x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141x64/ToolkitPro1521vc141x64DSD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Dynamic_Unicode_Debug/vc141/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Dynamic_Unicode_Debug/vc141/</AssemblerListingLocation>
+      <ObjectFileName>.\Dynamic_Unicode_Debug/vc141/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Dynamic_Unicode_Debug/vc141/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141/ToolkitPro1521vc141DSUD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Dynamic_Unicode_Debug/vc141x64/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Dynamic_Unicode_Debug/vc141x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Dynamic_Unicode_Debug/vc141x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Dynamic_Unicode_Debug/vc141x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141x64/ToolkitPro1521vc141x64DSUD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Static_Unicode_Release/vc141/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Static_Unicode_Release/vc141/</AssemblerListingLocation>
+      <ObjectFileName>.\Static_Unicode_Release/vc141/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Static_Unicode_Release/vc141/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141/ToolkitPro1521vc141SU.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Static_Unicode_Release/vc141x64/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Static_Unicode_Release/vc141x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Static_Unicode_Release/vc141x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Static_Unicode_Release/vc141x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141x64/ToolkitPro1521vc141x64SU.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath);../Include/;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Static_Debug/vc141/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Static_Debug/vc141/</AssemblerListingLocation>
+      <ObjectFileName>.\Static_Debug/vc141/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Static_Debug/vc141/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141/ToolkitPro1521vc141SUD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Static_Debug/vc141x64/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Static_Debug/vc141x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Static_Debug/vc141x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Static_Debug/vc141x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141x64/ToolkitPro1521vc141x64SD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Dynamic_Unicode_Release/vc141/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Dynamic_Unicode_Release/vc141/</AssemblerListingLocation>
+      <ObjectFileName>.\Dynamic_Unicode_Release/vc141/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Dynamic_Unicode_Release/vc141/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141/ToolkitPro1521vc141DSU.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include;../Include/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Dynamic_Unicode_Release/vc141x64/ToolkitProStatic.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Dynamic_Unicode_Release/vc141x64/</AssemblerListingLocation>
+      <ObjectFileName>.\Dynamic_Unicode_Release/vc141x64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Dynamic_Unicode_Release/vc141x64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>../../lib/vc141x64/ToolkitPro1521vc141x64DSU.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Include\Calendar\XTPCalendarCaptionBarControl.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarControl.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarController.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarControlView.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarCustomDataProvider.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarCustomProperties.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarData.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarDatabaseDataProvider.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarDayView.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarDayViewDay.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarDayViewEvent.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarDayViewTimeScale.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarEvent.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarEventLabel.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarEventPropertiesDlg.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarEventRecurrenceDlg.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarEvents.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarMAPIDataProvider.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarMAPIWrapper.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarMemoryDataProvider.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarMonthView.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarMonthViewDay.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarMonthViewEvent.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarMsgNotifier.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarOccurSeriesChooseDlg.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarOptions.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarPaintManager.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarRecurrencePattern.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarRemindersDialog.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarRemindersManager.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarResource.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarResourcesManager.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarTheme.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarThemeOffice2007.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarTimeLineView.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarTimeLineViewGroup.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarTimeLineViewTimeScale.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarTimeZoneHelper.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarTip.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarUtils.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarView.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarViewDay.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarViewEvent.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarViewPart.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarWeekView.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarWeekViewDay.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPCalendarWeekViewEvent.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPDatePickerControl.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPDatePickerDaysCollection.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPDatePickerItemDay.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPDatePickerItemMonth.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPDatePickerList.cpp" />
+    <ClCompile Include="..\Include\Calendar\XTPDatePickerPaintManager.cpp" />
+    <ClCompile Include="..\Include\Chart\Appearance\XTPChartAppearance.cpp" />
+    <ClCompile Include="..\Include\Chart\Appearance\XTPChartBorder.cpp" />
+    <ClCompile Include="..\Include\Chart\Appearance\XTPChartFillStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Appearance\XTPChartLineStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Appearance\XTPChartPalette.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxis.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisConstantLines.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisCustomLabels.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisGridLines.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisRange.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisStrips.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisTickMarks.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisTitle.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartAxisView.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartRadarAxis.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartRadarAxisXView.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartRadarAxisYView.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Axis\XTPChartScaleTypeMap.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2D.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DPane.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DSeriesView.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DView.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\RadarDiagram\XTPChartRadarDiagram.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\RadarDiagram\XTPChartRadarDiagramSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\RadarDiagram\XTPChartRadarDiagramSeriesView.cpp" />
+    <ClCompile Include="..\Include\Chart\Diagram\RadarDiagram\XTPChartRadarDiagramView.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartCircleDeviceCommand.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartDeviceCommand.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartDeviceContext.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartDrawThread.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartLineDeviceCommand.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartPieDeviceCommand.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartPolygonDeviceCommand.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartRectangleDeviceCommand.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartTextDeviceCommand.cpp" />
+    <ClCompile Include="..\Include\Chart\Drawing\XTPChartTransformationDeviceCommand.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Area\XTPChartAreaSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Area\XTPChartRangeAreaSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Area\XTPChartRangeSplineAreaSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Area\XTPChartSplineAreaSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Area\XTPChartStackedAreaSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Area\XTPChartStackedSplineAreaSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Area\XTPChartStepAreaSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Bar\XTPChartBarSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Bar\XTPChartBarSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Bar\XTPChartStackedBarSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Financial\XTPChartCandleStickSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Financial\XTPChartHighLowSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Funnel\XTPChartFunnelDiagram.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Funnel\XTPChartFunnelSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Funnel\XTPChartFunnelSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Line\XTPChartFastLineSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Line\XTPChartLineSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Line\XTPChartScatterLineSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Line\XTPChartSplineSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Line\XTPChartStepLineSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Pie\XTPChartPieDiagram.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Pie\XTPChartPieSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Pie\XTPChartPieSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Point\XTPChartBubbleSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Point\XTPChartBubbleSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Point\XTPChartMarker.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Point\XTPChartPointSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Point\XTPChartPointSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Pyramid\XTPChartPyramidDiagram.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Pyramid\XTPChartPyramidSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Pyramid\XTPChartPyramidSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarAreaSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarAreaSeriesView.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarLineSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarLineSeriesView.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarPointSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarPointSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarPointSeriesView.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarSplineAreaSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Radar\XTPChartRadarSplineSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Range\XTPChartGanttSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Range\XTPChartRangeBarSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\Styles\Range\XTPChartRangeBarSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\Types\XTPChartPie.cpp" />
+    <ClCompile Include="..\Include\Chart\Types\XTPChartTypes.cpp" />
+    <ClCompile Include="..\Include\Chart\Utils\XTPChartMathUtils.cpp" />
+    <ClCompile Include="..\Include\Chart\Utils\XTPChartNumberFormat.cpp" />
+    <ClCompile Include="..\Include\Chart\Utils\XTPChartTextPainter.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartContent.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartContentView.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartControl.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartDiagram.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartElement.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartElementView.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartLegend.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartLegendView.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartPanel.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartSeries.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartSeriesLabel.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartSeriesLabelView.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartSeriesPoint.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartSeriesStyle.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartSeriesView.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartTitle.cpp" />
+    <ClCompile Include="..\Include\Chart\XTPChartTitleView.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCommandBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCommandBarAnimation.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCommandBars.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCommandBarsFrameHook.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControl.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlButton.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlComboBox.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlComboBoxExt.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlCustom.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlEdit.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlExt.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlGallery.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlListBox.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlPopup.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlPopupColor.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlProgress.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControls.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlScrollBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPControlSlider.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCustomizeCommandsPage.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCustomizeKeyboardPage.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCustomizeMenusPage.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCustomizeOptionsPage.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCustomizeSheet.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCustomizeToolbarsPage.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPCustomizeTools.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPDefaultTheme.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPDialogBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPDockBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPDockContext.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPDockState.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPFrameWnd.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPGalleryListBox.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPImageEditor.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPKeyboardManager.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPMenuBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPMessageBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPMiniToolBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPMouseManager.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPNativeXPTheme.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPOffice2003Theme.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPOfficeTheme.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPPaintManager.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPPopupBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPPreviewView.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPReBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPRecentFileList.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPResourceTheme.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPScrollBase.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPShortcutManager.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPStatusBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPTabClientWnd.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPTabToolBar.cpp" />
+    <ClCompile Include="..\Include\CommandBars\XTPToolBar.cpp" />
+    <ClCompile Include="..\Include\Common\Base\Types\XTPPoint2.cpp" />
+    <ClCompile Include="..\Include\Common\Base\Types\XTPPoint3.cpp" />
+    <ClCompile Include="..\Include\Common\XTPColorManager.cpp" />
+    <ClCompile Include="..\Include\Common\XTPDrawHelpers.cpp" />
+    <ClCompile Include="..\Include\Common\XTPHookManager.cpp" />
+    <ClCompile Include="..\Include\Common\XTPImageManager.cpp" />
+    <ClCompile Include="..\Include\Common\XTPMarkupRender.cpp" />
+    <ClCompile Include="..\Include\Common\XTPNotifyConnection.cpp" />
+    <ClCompile Include="..\Include\Common\XTPPropExchange.cpp" />
+    <ClCompile Include="..\Include\Common\XTPResourceImage.cpp" />
+    <ClCompile Include="..\Include\Common\XTPResourceManager.cpp" />
+    <ClCompile Include="..\Include\Common\XTPRichRender.cpp" />
+    <ClCompile Include="..\Include\Common\XTPSystemHelpers.cpp" />
+    <ClCompile Include="..\Include\Common\XTPToolTipContext.cpp" />
+    <ClCompile Include="..\Include\Common\XTPWinThemeWrapper.cpp" />
+    <ClCompile Include="..\Include\Controls\Button\XTPButton.cpp" />
+    <ClCompile Include="..\Include\Controls\Button\XTPButtonTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Button\XTPColorPicker.cpp" />
+    <ClCompile Include="..\Include\Controls\Combo\XTPComboBox.cpp" />
+    <ClCompile Include="..\Include\Controls\Combo\XTPFontComboBox.cpp" />
+    <ClCompile Include="..\Include\Controls\CoreTree\XTPCoreTreeControl.cpp" />
+    <ClCompile Include="..\Include\Controls\CoreTree\XTPCoreTreeItem.cpp" />
+    <ClCompile Include="..\Include\Controls\CoreTree\XTPCoreTreePaintManager.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTButton.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTButtonTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTColorRef.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTComboBoxEx.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTDateTimeCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTFlatComboBox.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTFlatControlsTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTHtmlView.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTMemDC.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTOutBarCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTOutBarCtrlTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTThemeManager.cpp" />
+    <ClCompile Include="..\Include\Controls\Deprecated\XTVC50Helpers.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPBrowseDialog.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPColorDialog.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPColorPageCustom.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPColorPageStandard.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPPropertyPage.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPPropertyPageNavigator.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPPropertySheet.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPTaskDialog.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPTaskDialogAPI.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPTaskDialogClient.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPTaskDialogControls.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPTaskDialogFrame.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPTipOfTheDay.cpp" />
+    <ClCompile Include="..\Include\Controls\Dialog\XTPWindowList.cpp" />
+    <ClCompile Include="..\Include\Controls\Edit\XTPBrowseEdit.cpp" />
+    <ClCompile Include="..\Include\Controls\Edit\XTPEdit.cpp" />
+    <ClCompile Include="..\Include\Controls\Edit\XTPHexEdit.cpp" />
+    <ClCompile Include="..\Include\Controls\Edit\XTPMaskEdit.cpp" />
+    <ClCompile Include="..\Include\Controls\Header\XTPHeaderCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Header\XTPHeaderCtrlTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\ListBox\XTPCheckListBox.cpp" />
+    <ClCompile Include="..\Include\Controls\ListBox\XTPEditListBox.cpp" />
+    <ClCompile Include="..\Include\Controls\ListBox\XTPListBox.cpp" />
+    <ClCompile Include="..\Include\Controls\ListBox\XTPMarkupListBox.cpp" />
+    <ClCompile Include="..\Include\Controls\ListBox\XTPShortcutListBox.cpp" />
+    <ClCompile Include="..\Include\Controls\ListBox\XTPShortcutListBoxTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\List\XTPListBase.cpp" />
+    <ClCompile Include="..\Include\Controls\List\XTPListCtrlView.cpp" />
+    <ClCompile Include="..\Include\Controls\List\XTPSortClass.cpp" />
+    <ClCompile Include="..\Include\Controls\Popup\XTPColorPopup.cpp" />
+    <ClCompile Include="..\Include\Controls\Popup\XTPColorSelectorCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Popup\XTPPopupControl.cpp" />
+    <ClCompile Include="..\Include\Controls\Popup\XTPPopupItem.cpp" />
+    <ClCompile Include="..\Include\Controls\Popup\XTPPopupPaintManager.cpp" />
+    <ClCompile Include="..\Include\Controls\Popup\XTPTipWindow.cpp" />
+    <ClCompile Include="..\Include\Controls\Progress\XTPMarqueeCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Progress\XTPProgressCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Resize\XTPResize.cpp" />
+    <ClCompile Include="..\Include\Controls\Resize\XTPResizeDialog.cpp" />
+    <ClCompile Include="..\Include\Controls\Resize\XTPResizeFormView.cpp" />
+    <ClCompile Include="..\Include\Controls\Resize\XTPResizeGroupBox.cpp" />
+    <ClCompile Include="..\Include\Controls\Resize\XTPResizePoint.cpp" />
+    <ClCompile Include="..\Include\Controls\Resize\XTPResizePropertyPage.cpp" />
+    <ClCompile Include="..\Include\Controls\Resize\XTPResizePropertySheet.cpp" />
+    <ClCompile Include="..\Include\Controls\Resize\XTPResizeRect.cpp" />
+    <ClCompile Include="..\Include\Controls\Scroll\XTPPageScroller.cpp" />
+    <ClCompile Include="..\Include\Controls\Scroll\XTPScrollBar.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPDirWatcher.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPDropSource.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPShellListBase.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPShellListCtrlView.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPShellPidl.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPShellSettings.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPShellTreeBase.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPShellTreeCtrlView.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPTaskbarManager.cpp" />
+    <ClCompile Include="..\Include\Controls\Shell\XTPTrayIcon.cpp" />
+    <ClCompile Include="..\Include\Controls\Spin\XTPSpinButtonCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Splitter\XTPSplitterWnd.cpp" />
+    <ClCompile Include="..\Include\Controls\Splitter\XTPSplitterWndTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Static\XTPCaption.cpp" />
+    <ClCompile Include="..\Include\Controls\Static\XTPCaptionPopupWnd.cpp" />
+    <ClCompile Include="..\Include\Controls\Static\XTPCaptionTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Static\XTPHyperLink.cpp" />
+    <ClCompile Include="..\Include\Controls\Static\XTPMarkupStatic.cpp" />
+    <ClCompile Include="..\Include\Controls\Static\XTPSearchOptionsCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Tab\XTPExcelTabCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Tab\XTPExcelTabCtrlTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Tab\XTPMDIWndTab.cpp" />
+    <ClCompile Include="..\Include\Controls\Tab\XTPTabBase.cpp" />
+    <ClCompile Include="..\Include\Controls\Tab\XTPTabBaseTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Tab\XTPTabCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Tab\XTPTabCtrlButtons.cpp" />
+    <ClCompile Include="..\Include\Controls\Tab\XTPTabView.cpp" />
+    <ClCompile Include="..\Include\Controls\Tree\XTPMarkupTreeCtrl.cpp" />
+    <ClCompile Include="..\Include\Controls\Tree\XTPTreeBase.cpp" />
+    <ClCompile Include="..\Include\Controls\Tree\XTPTreeCtrlView.cpp" />
+    <ClCompile Include="..\Include\Controls\Util\XTPAnimationDC.cpp" />
+    <ClCompile Include="..\Include\Controls\Util\XTPControlTheme.cpp" />
+    <ClCompile Include="..\Include\Controls\Util\XTPFunctions.cpp" />
+    <ClCompile Include="..\Include\Controls\Util\XTPGlobal.cpp" />
+    <ClCompile Include="..\Include\Controls\Util\XTPMemFile.cpp" />
+    <ClCompile Include="..\Include\Controls\Util\XTPRegistryManager.cpp" />
+    <ClCompile Include="..\Include\Controls\Util\XTPUtil.cpp" />
+    <ClCompile Include="..\Include\Controls\Util\XTPWindowPos.cpp" />
+    <ClCompile Include="..\Include\Controls\View\XTPMarkupView.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPane.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneAutoHidePanel.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneBase.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneBaseContainer.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneContext.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneKeyboardHook.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneLayout.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneManager.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneMiniWnd.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPanePaintManager.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneSidePanel.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneSplitterContainer.cpp" />
+    <ClCompile Include="..\Include\DockingPane\XTPDockingPaneTabbedContainer.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphConnection.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphConnectionPoint.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphConnectionPoints.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphConnections.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphControl.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphDrawContext.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphDrawContextGdiPlus.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphEditItem.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphElement.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphImage.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphMetallicTheme.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphNode.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphNodeGroup.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphNodeGroups.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphNodes.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphPage.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphPageHistory.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphPages.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphPaintManager.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphSelectedElements.cpp" />
+    <ClCompile Include="..\Include\FlowGraph\XTPFlowGraphUndoManager.cpp" />
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\png.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngerror.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngget.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngmem.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngpread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngrio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngrtran.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngrutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngset.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngtrans.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngwio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngwrite.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngwtran.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\libpng\pngwutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\XTPGraphicBitmapPng.cpp" />
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\adler32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\compress.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\crc32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\deflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\gzio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\infback.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\inffast.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\inflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\inftrees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\trees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\uncompr.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\GraphicLibrary\zlib\zutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Include\Markup\XTPMarkupBorder.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupBuilder.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupButton.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupCanvas.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupContext.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupControl.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupDecorator.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupDeviceContext.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupDrawingContext.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupFrameworkElement.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupGrid.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupImage.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupInline.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupInputElement.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupKeyboardNavigation.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupObject.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupPage.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupPanel.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupParser.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupResourceDictionary.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupScrollViewer.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupShape.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupStackPanel.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupTextBlock.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupThickness.cpp" />
+    <ClCompile Include="..\Include\Markup\XTPMarkupUIElement.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGrid.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridInplaceButton.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridInplaceEdit.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridInplaceList.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridItem.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridItemBool.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridItemColor.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridItemExt.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridItemFont.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridItemNumber.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridItemOption.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridItemSize.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridPaintManager.cpp" />
+    <ClCompile Include="..\Include\PropertyGrid\XTPPropertyGridView.cpp" />
+    <ClCompile Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemDateTime.cpp" />
+    <ClCompile Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemIcon.cpp" />
+    <ClCompile Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemNumber.cpp" />
+    <ClCompile Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemPreview.cpp" />
+    <ClCompile Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemText.cpp" />
+    <ClCompile Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemVariant.cpp" />
+    <ClCompile Include="..\Include\ReportControl\TrackControl\XTPTrackBlock.cpp" />
+    <ClCompile Include="..\Include\ReportControl\TrackControl\XTPTrackControl.cpp" />
+    <ClCompile Include="..\Include\ReportControl\TrackControl\XTPTrackControlItem.cpp" />
+    <ClCompile Include="..\Include\ReportControl\TrackControl\XTPTrackHeader.cpp" />
+    <ClCompile Include="..\Include\ReportControl\TrackControl\XTPTrackPaintManager.cpp" />
+    <ClCompile Include="..\Include\ReportControl\TrackControl\XTPTrackUndoManager.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportBehavior.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportBehaviorRowModifier.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportBehaviorRowMouseButton.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportBehaviorSchemeOutlook.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportBorder.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportColumn.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportColumns.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportControl.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportControlLocale.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportDataManager.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportDeprecated.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportDragDrop.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportFilterEditControl.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportGroupRow.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportHeader.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportHitTestInfo.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportHyperlink.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportIconNavigator.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportInplaceControls.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportInplaceEdit.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportNavigator.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportPageSetupDialog.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportPaintManager.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRecord.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRecordItem.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRecordItemConstraint.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRecordItemControls.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRecordItemEditOptions.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRecordItemRange.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRecords.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRow.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportRows.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportSection.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportSections.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportSelectedRows.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportSubListControl.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportThickness.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportTip.cpp" />
+    <ClCompile Include="..\Include\ReportControl\XTPReportView.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonBackstageControls.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonBackstageView.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonBar.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonBuilder.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonControlTab.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonCustomizePage.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonCustomizeQuickAccessPage.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonGroup.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonGroups.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonPaintManager.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonPopups.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonQuickAccessControls.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonSystemButton.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonSystemTheme.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonTab.cpp" />
+    <ClCompile Include="..\Include\Ribbon\XTPRibbonTheme.cpp" />
+    <ClCompile Include="..\Include\ShortcutBar\XTPShortcutBar.cpp" />
+    <ClCompile Include="..\Include\ShortcutBar\XTPShortcutBarAnimation.cpp" />
+    <ClCompile Include="..\Include\ShortcutBar\XTPShortcutBarPaintManager.cpp" />
+    <ClCompile Include="..\Include\ShortcutBar\XTPShortcutBarPane.cpp" />
+    <ClCompile Include="..\Include\ShortcutBar\XTPShortcutBarPopup.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinDrawTools.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinImage.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinManager.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinManagerApiHook.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinManagerColorFilter.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinManagerModuleList.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinManagerResource.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinManagerSchema.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObject.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectButton.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectComboBox.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectEdit.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectFrame.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectHeader.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectListBox.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectListView.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectMDI.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectMenu.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectProgress.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectScrollBar.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectSpin.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectStatusBar.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectTab.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectToolBar.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectTrackBar.cpp" />
+    <ClCompile Include="..\Include\SkinFramework\XTPSkinObjectTreeView.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditAutoCompleteWnd.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditBufferManager.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditColorComboBox.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditColorSampleText.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditCtrl.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditDoc.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditDrawTextProcessor.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditFindReplaceDlg.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditGoToLineDlg.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditLexCfgFileReader.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditLexClass.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditLexColorFileReader.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditLexParser.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditLineMarksManager.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditPaintManager.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditPropertiesDlg.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditPropertiesPage.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditPropertiesPageColor.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditPropertiesPageEdit.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditPropertiesPageFont.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditSectionManager.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditSelection.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditStruct.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditTextIterator.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditTipWnd.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditToolTipCtrl.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditUndoManager.cpp" />
+    <ClCompile Include="..\Include\SyntaxEdit\XTPSyntaxEditView.cpp" />
+    <ClCompile Include="..\Include\TabManager\XTPTabControl.cpp" />
+    <ClCompile Include="..\Include\TabManager\XTPTabManager.cpp" />
+    <ClCompile Include="..\Include\TabManager\XTPTabPaintManager.cpp" />
+    <ClCompile Include="..\Include\TabManager\XTPTabPaintManagerAppearance.cpp" />
+    <ClCompile Include="..\Include\TabManager\XTPTabPaintManagerColors.cpp" />
+    <ClCompile Include="..\Include\TaskPanel\XTPTaskPanel.cpp" />
+    <ClCompile Include="..\Include\TaskPanel\XTPTaskPanelAnimation.cpp" />
+    <ClCompile Include="..\Include\TaskPanel\XTPTaskPanelGroup.cpp" />
+    <ClCompile Include="..\Include\TaskPanel\XTPTaskPanelGroupItem.cpp" />
+    <ClCompile Include="..\Include\TaskPanel\XTPTaskPanelItem.cpp" />
+    <ClCompile Include="..\Include\TaskPanel\XTPTaskPanelItems.cpp" />
+    <ClCompile Include="..\Include\TaskPanel\XTPTaskPanelPaintManager.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dynamic Unicode Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Static Unicode Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\Calendar\XTPCalendarCaptionBarControl.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarControl.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarController.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarControlView.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarCustomDataProvider.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarCustomProperties.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarData.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarDatabaseDataProvider.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarDayView.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarDayViewDay.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarDayViewEvent.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarDayViewTimeScale.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarDefines.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarEvent.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarEventLabel.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarEventPropertiesDlg.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarEventRecurrenceDlg.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarEvents.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarMAPIDataProvider.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarMAPIWrapper.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarMemoryDataProvider.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarMonthView.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarMonthViewDay.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarMonthViewEvent.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarMsgNotifier.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarNotifications.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarOccurSeriesChooseDlg.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarOptions.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarPaintManager.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarPtrCollectionT.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarRecurrencePattern.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarRemindersDialog.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarRemindersManager.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarResource.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarResourcesManager.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarTheme.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarThemeOffice2007.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarTimeLineView.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarTimeLineViewGroup.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarTimeLineViewTimeScale.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarTimeZoneHelper.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarTip.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarUtils.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarView.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarViewDay.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarViewEvent.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarViewPart.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarWeekView.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarWeekViewDay.h" />
+    <ClInclude Include="..\Include\Calendar\XTPCalendarWeekViewEvent.h" />
+    <ClInclude Include="..\Include\Calendar\XTPDatePickerControl.h" />
+    <ClInclude Include="..\Include\Calendar\XTPDatePickerDaysCollection.h" />
+    <ClInclude Include="..\Include\Calendar\XTPDatePickerItemDay.h" />
+    <ClInclude Include="..\Include\Calendar\XTPDatePickerItemMonth.h" />
+    <ClInclude Include="..\Include\Calendar\XTPDatePickerList.h" />
+    <ClInclude Include="..\Include\Calendar\XTPDatePickerNotifications.h" />
+    <ClInclude Include="..\Include\Calendar\XTPDatePickerPaintManager.h" />
+    <ClInclude Include="..\Include\Chart\Appearance\XTPChartAppearance.h" />
+    <ClInclude Include="..\Include\Chart\Appearance\XTPChartBorder.h" />
+    <ClInclude Include="..\Include\Chart\Appearance\XTPChartFillStyle.h" />
+    <ClInclude Include="..\Include\Chart\Appearance\XTPChartLineStyle.h" />
+    <ClInclude Include="..\Include\Chart\Appearance\XTPChartPalette.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxis.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisConstantLines.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisCustomLabels.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisGridLines.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisLabel.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisRange.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisStrips.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisTickMarks.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisTitle.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartAxisView.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartRadarAxis.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartRadarAxisView.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartRadarAxisXView.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartRadarAxisYView.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Axis\XTPChartScaleTypeMap.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2D.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DPane.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\Diagram2D\XTPChartDiagram2DView.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\RadarDiagram\XTPChartRadarDiagram.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\RadarDiagram\XTPChartRadarDiagramSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\RadarDiagram\XTPChartRadarDiagramSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Diagram\RadarDiagram\XTPChartRadarDiagramView.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartCircleDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartDeviceContext.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartDrawingTypeDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartDrawThread.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartLineDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartPieDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartPolygonDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartRectangleDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartTextDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Drawing\XTPChartTransformationDeviceCommand.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Area\XTPChartAreaSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Area\XTPChartAreaSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Area\XTPChartRangeAreaSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Area\XTPChartRangeSplineAreaSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Area\XTPChartSplineAreaSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Area\XTPChartStackedAreaSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Area\XTPChartStackedSplineAreaSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Area\XTPChartStepAreaSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Bar\XTPChartBarSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Bar\XTPChartBarSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Bar\XTPChartBarSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Bar\XTPChartStackedBarSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Financial\XTPChartCandleStickSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Financial\XTPChartHighLowSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Funnel\XTPChartFunnelDiagram.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Funnel\XTPChartFunnelSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Funnel\XTPChartFunnelSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Funnel\XTPChartFunnelSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Line\XTPChartFastLineSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Line\XTPChartLineSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Line\XTPChartScatterLineSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Line\XTPChartSplineSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Line\XTPChartStepLineSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Pie\XTPChartPieDiagram.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Pie\XTPChartPieDiagramView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Pie\XTPChartPieSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Pie\XTPChartPieSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Point\XTPChartBubbleSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Point\XTPChartBubbleSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Point\XTPChartMarker.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Point\XTPChartPointSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Point\XTPChartPointSeriesLabelView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Point\XTPChartPointSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Point\XTPChartPointSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Pyramid\XTPChartPyramidDiagram.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Pyramid\XTPChartPyramidSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Pyramid\XTPChartPyramidSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarAreaSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarAreaSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarLineSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarLineSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarPointSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarPointSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarPointSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarSplineAreaSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Radar\XTPChartRadarSplineSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Range\XTPChartGanttSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Range\XTPChartRangeBarSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Range\XTPChartRangeBarSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\Styles\Range\XTPChartRangeBarSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\Types\XTPChartPie.h" />
+    <ClInclude Include="..\Include\Chart\Types\XTPChartTypes.h" />
+    <ClInclude Include="..\Include\Chart\Utils\XTPChartMathUtils.h" />
+    <ClInclude Include="..\Include\Chart\Utils\XTPChartNumberFormat.h" />
+    <ClInclude Include="..\Include\Chart\Utils\XTPChartTextPainter.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartContent.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartContentView.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartControl.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartDefines.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartDiagram.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartDiagramView.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartElement.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartElementView.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartLegend.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartPanel.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartSeries.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartSeriesLabel.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartSeriesPoint.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartSeriesStyle.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartSeriesView.h" />
+    <ClInclude Include="..\Include\Chart\XTPChartTitle.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCommandBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCommandBarAnimation.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCommandBars.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCommandBarsDefines.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCommandBarsFrameHook.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControl.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlButton.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlComboBox.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlComboBoxExt.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlComboBoxGalleryPopupBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlCustom.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlEdit.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlExt.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlGallery.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlListBox.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlPopup.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlPopupColor.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlProgress.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControls.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlScrollBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPControlSlider.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCustomizeCommandsPage.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCustomizeKeyboardPage.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCustomizeMenusPage.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCustomizeOptionsPage.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCustomizeSheet.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCustomizeToolbarsPage.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPCustomizeTools.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPDialogBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPDialogBase.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPDockBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPDockContext.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPDockState.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPFrameWnd.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPGalleryListBox.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPImageEditor.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPKeyboardManager.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPMenuBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPMessageBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPMiniToolBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPMouseManager.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPOffice2003Theme.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPPaintManager.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPPopupBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPPreviewView.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPReBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPRecentFileList.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPResourceTheme.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPScrollBase.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPShortcutManager.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPStatusBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPTabClientWnd.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPTabToolBar.h" />
+    <ClInclude Include="..\Include\CommandBars\XTPToolBar.h" />
+    <ClInclude Include="..\Include\Common\Base\Types\XTPPoint2.h" />
+    <ClInclude Include="..\Include\Common\Base\Types\XTPPoint3.h" />
+    <ClInclude Include="..\Include\Common\Base\Types\XTPRect.h" />
+    <ClInclude Include="..\Include\Common\Base\Types\XTPSize.h" />
+    <ClInclude Include="..\Include\Common\XTPColorManager.h" />
+    <ClInclude Include="..\Include\Common\XTPCustomHeap.h" />
+    <ClInclude Include="..\Include\Common\XTPDLLExports.h" />
+    <ClInclude Include="..\Include\Common\XTPDrawHelpers.h" />
+    <ClInclude Include="..\Include\Common\XTPHookManager.h" />
+    <ClInclude Include="..\Include\Common\XTPImageManager.h" />
+    <ClInclude Include="..\Include\Common\XTPIntel80Helpers.h" />
+    <ClInclude Include="..\Include\Common\XTPMacros.h" />
+    <ClInclude Include="..\Include\Common\XTPMarkupRender.h" />
+    <ClInclude Include="..\Include\Common\XTPMaskEditT.h" />
+    <ClInclude Include="..\Include\Common\XTPNotifyConnection.h" />
+    <ClInclude Include="..\Include\Common\XTPPropExchange.h" />
+    <ClInclude Include="..\Include\Common\XTPRegExp.h" />
+    <ClInclude Include="..\Include\Common\XTPResourceImage.h" />
+    <ClInclude Include="..\Include\Common\XTPResourceManager.h" />
+    <ClInclude Include="..\Include\Common\XTPRichRender.h" />
+    <ClInclude Include="..\Include\Common\XTPSmartPtrInternalT.h" />
+    <ClInclude Include="..\Include\Common\XTPSystemHelpers.h" />
+    <ClInclude Include="..\Include\Common\XTPToolTipContext.h" />
+    <ClInclude Include="..\Include\Common\XTPvc141Helpers.h" />
+    <ClInclude Include="..\Include\Common\XTPVersion.h" />
+    <ClInclude Include="..\Include\Common\XTPWinThemeWrapper.h" />
+    <ClInclude Include="..\Include\Common\XTPXMLHelpers.h" />
+    <ClInclude Include="..\Include\Controls\Button\XTPButton.h" />
+    <ClInclude Include="..\Include\Controls\Button\XTPButtonTheme.h" />
+    <ClInclude Include="..\Include\Controls\Button\XTPColorPicker.h" />
+    <ClInclude Include="..\Include\Controls\Combo\XTPComboBox.h" />
+    <ClInclude Include="..\Include\Controls\Combo\XTPFontComboBox.h" />
+    <ClInclude Include="..\Include\Controls\CoreTree\XTPCoreTreeControl.h" />
+    <ClInclude Include="..\Include\Controls\CoreTree\XTPCoreTreeItem.h" />
+    <ClInclude Include="..\Include\Controls\CoreTree\XTPCoreTreePaintManager.h" />
+    <ClInclude Include="..\Include\Controls\Defines.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\Deprecated.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTButton.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTButtonTheme.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTColorRef.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTComboBoxEx.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTDateTimeCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTFlatComboBox.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTFlatControlsTheme.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTHtmlView.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTMemDC.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTOutBarCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTOutBarCtrlTheme.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTThemeManager.h" />
+    <ClInclude Include="..\Include\Controls\Deprecated\XTVC50Helpers.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPBrowseDialog.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPColorDialog.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPColorPageCustom.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPColorPageStandard.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPPropertyPage.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPPropertyPageNavigator.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPPropertySheet.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPTaskDialog.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPTaskDialogAPI.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPTaskDialogClient.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPTaskDialogControls.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPTaskDialogFrame.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPTipOfTheDay.h" />
+    <ClInclude Include="..\Include\Controls\Dialog\XTPWindowList.h" />
+    <ClInclude Include="..\Include\Controls\Edit\XTPBrowseEdit.h" />
+    <ClInclude Include="..\Include\Controls\Edit\XTPEdit.h" />
+    <ClInclude Include="..\Include\Controls\Edit\XTPHexEdit.h" />
+    <ClInclude Include="..\Include\Controls\Edit\XTPMaskEdit.h" />
+    <ClInclude Include="..\Include\Controls\Header\XTPHeaderCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Header\XTPHeaderCtrlTheme.h" />
+    <ClInclude Include="..\Include\Controls\Includes.h" />
+    <ClInclude Include="..\Include\Controls\ListBox\XTPCheckListBox.h" />
+    <ClInclude Include="..\Include\Controls\ListBox\XTPEditListBox.h" />
+    <ClInclude Include="..\Include\Controls\ListBox\XTPListBox.h" />
+    <ClInclude Include="..\Include\Controls\ListBox\XTPMarkupListBox.h" />
+    <ClInclude Include="..\Include\Controls\ListBox\XTPShortcutListBox.h" />
+    <ClInclude Include="..\Include\Controls\ListBox\XTPShortcutListBoxTheme.h" />
+    <ClInclude Include="..\Include\Controls\List\XTPListBase.h" />
+    <ClInclude Include="..\Include\Controls\List\XTPListCtrlView.h" />
+    <ClInclude Include="..\Include\Controls\List\XTPSortClass.h" />
+    <ClInclude Include="..\Include\Controls\Popup\XTPColorPopup.h" />
+    <ClInclude Include="..\Include\Controls\Popup\XTPColorSelectorCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Popup\XTPPopupControl.h" />
+    <ClInclude Include="..\Include\Controls\Popup\XTPPopupItem.h" />
+    <ClInclude Include="..\Include\Controls\Popup\XTPPopupPaintManager.h" />
+    <ClInclude Include="..\Include\Controls\Popup\XTPTipWindow.h" />
+    <ClInclude Include="..\Include\Controls\Progress\XTPMarqueeCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Progress\XTPProgressCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Resize\XTPResize.h" />
+    <ClInclude Include="..\Include\Controls\Resize\XTPResizeDialog.h" />
+    <ClInclude Include="..\Include\Controls\Resize\XTPResizeFormView.h" />
+    <ClInclude Include="..\Include\Controls\Resize\XTPResizeGroupBox.h" />
+    <ClInclude Include="..\Include\Controls\Resize\XTPResizePoint.h" />
+    <ClInclude Include="..\Include\Controls\Resize\XTPResizePropertyPage.h" />
+    <ClInclude Include="..\Include\Controls\Resize\XTPResizePropertySheet.h" />
+    <ClInclude Include="..\Include\Controls\Resize\XTPResizeRect.h" />
+    <ClInclude Include="..\Include\Controls\Resource.h" />
+    <ClInclude Include="..\Include\Controls\Scroll\XTPPageScroller.h" />
+    <ClInclude Include="..\Include\Controls\Scroll\XTPScrollBar.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPDirWatcher.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPDropSource.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPShellListBase.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPShellListCtrlView.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPShellPidl.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPShellSettings.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPShellTreeBase.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPShellTreeCtrlView.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPTaskbarManager.h" />
+    <ClInclude Include="..\Include\Controls\Shell\XTPTrayIcon.h" />
+    <ClInclude Include="..\Include\Controls\Spin\XTPSpinButtonCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Splitter\XTPSplitterWnd.h" />
+    <ClInclude Include="..\Include\Controls\Splitter\XTPSplitterWndTheme.h" />
+    <ClInclude Include="..\Include\Controls\Static\XTPCaption.h" />
+    <ClInclude Include="..\Include\Controls\Static\XTPCaptionPopupWnd.h" />
+    <ClInclude Include="..\Include\Controls\Static\XTPCaptionTheme.h" />
+    <ClInclude Include="..\Include\Controls\Static\XTPHyperLink.h" />
+    <ClInclude Include="..\Include\Controls\Static\XTPMarkupStatic.h" />
+    <ClInclude Include="..\Include\Controls\Static\XTPSearchOptionsCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Tab\XTPExcelTabCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Tab\XTPExcelTabCtrlTheme.h" />
+    <ClInclude Include="..\Include\Controls\Tab\XTPMDIWndTab.h" />
+    <ClInclude Include="..\Include\Controls\Tab\XTPTabBase.h" />
+    <ClInclude Include="..\Include\Controls\Tab\XTPTabBaseTheme.h" />
+    <ClInclude Include="..\Include\Controls\Tab\XTPTabCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Tab\XTPTabCtrlButtons.h" />
+    <ClInclude Include="..\Include\Controls\Tab\XTPTabView.h" />
+    <ClInclude Include="..\Include\Controls\Tree\XTPMarkupTreeCtrl.h" />
+    <ClInclude Include="..\Include\Controls\Tree\XTPTreeBase.h" />
+    <ClInclude Include="..\Include\Controls\Tree\XTPTreeCtrlView.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPAnimationDC.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPControlTheme.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPFunctions.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPGlobal.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPHelpers.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPMemFile.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPRegistryManager.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPUtil.h" />
+    <ClInclude Include="..\Include\Controls\Util\XTPWindowPos.h" />
+    <ClInclude Include="..\Include\Controls\View\XTPMarkupView.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPane.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneAutoHidePanel.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneBase.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneBaseContainer.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneContext.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneDefines.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneIncludes.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneKeyboardHook.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneLayout.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneManager.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneMiniWnd.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPanePaintManager.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneSidePanel.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneSplitterContainer.h" />
+    <ClInclude Include="..\Include\DockingPane\XTPDockingPaneTabbedContainer.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphConnection.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphConnectionPoint.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphConnectionPoints.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphConnections.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphControl.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphDrawContext.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphDrawContextGdiPlus.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphEditItem.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphElement.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphImage.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphMessages.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphMetallicTheme.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphNode.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphNodeGroup.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphNodeGroups.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphNodes.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphPage.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphPageHistory.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphPages.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphPaintManager.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphSelectedElements.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphTools.h" />
+    <ClInclude Include="..\Include\FlowGraph\XTPFlowGraphUndoManager.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\libpng\png.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\libpng\pngconf.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\XTPGraphicBitmapPng.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\crc32.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\deflate.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\inffast.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\inffixed.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\inflate.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\inftrees.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\trees.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\zconf.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\zlib.h" />
+    <ClInclude Include="..\Include\GraphicLibrary\zlib\zutil.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupBorder.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupBuilder.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupButton.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupCanvas.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupContext.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupControl.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupDecorator.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupDeviceContext.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupDrawingContext.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupFrameworkElement.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupGrid.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupImage.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupInline.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupInputElement.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupKeyboardNavigation.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupObject.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupPage.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupPanel.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupParser.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupResourceDictionary.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupScrollViewer.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupShape.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupStackPanel.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupTextBlock.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupThickness.h" />
+    <ClInclude Include="..\Include\Markup\XTPMarkupUIElement.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGrid.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridDefines.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridInplaceButton.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridInplaceEdit.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridInplaceList.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridItem.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridItemBool.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridItemColor.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridItemExt.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridItemFont.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridItemNumber.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridItemOption.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridItemSize.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridPaintManager.h" />
+    <ClInclude Include="..\Include\PropertyGrid\XTPPropertyGridView.h" />
+    <ClInclude Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemDateTime.h" />
+    <ClInclude Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemIcon.h" />
+    <ClInclude Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemNumber.h" />
+    <ClInclude Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemPreview.h" />
+    <ClInclude Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemText.h" />
+    <ClInclude Include="..\Include\ReportControl\ItemTypes\XTPReportRecordItemVariant.h" />
+    <ClInclude Include="..\Include\ReportControl\TrackControl\XTPTrackBlock.h" />
+    <ClInclude Include="..\Include\ReportControl\TrackControl\XTPTrackControl.h" />
+    <ClInclude Include="..\Include\ReportControl\TrackControl\XTPTrackControlItem.h" />
+    <ClInclude Include="..\Include\ReportControl\TrackControl\XTPTrackHeader.h" />
+    <ClInclude Include="..\Include\ReportControl\TrackControl\XTPTrackPaintManager.h" />
+    <ClInclude Include="..\Include\ReportControl\TrackControl\XTPTrackUndoManager.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportBehavior.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportBorder.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportColumn.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportColumns.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportControl.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportDataManager.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportDefines.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportDragDrop.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportFilterEditControl.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportGroupRow.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportHeader.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportHyperlink.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportInplaceControls.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportNavigator.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportPageSetupDialog.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportPaintManager.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportRecord.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportRecordItem.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportRecordItemConstraint.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportRecordItemControls.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportRecordItemRange.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportRecords.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportRow.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportRows.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportSection.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportSections.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportSelectedRows.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportSubListControl.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportThickness.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportTip.h" />
+    <ClInclude Include="..\Include\ReportControl\XTPReportView.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonBackstageControls.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonBackstageView.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonBar.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonBuilder.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonControlTab.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonCustomizePage.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonCustomizeQuickAccessPage.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonGroup.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonGroups.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonPaintManager.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonPopups.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonQuickAccessControls.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonSystemButton.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonSystemTheme.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonTab.h" />
+    <ClInclude Include="..\Include\Ribbon\XTPRibbonTheme.h" />
+    <ClInclude Include="..\Include\ShortcutBar\XTPShortcutBar.h" />
+    <ClInclude Include="..\Include\ShortcutBar\XTPShortcutBarAnimation.h" />
+    <ClInclude Include="..\Include\ShortcutBar\XTPShortcutBarPaintManager.h" />
+    <ClInclude Include="..\Include\ShortcutBar\XTPShortcutBarPane.h" />
+    <ClInclude Include="..\Include\ShortcutBar\XTPShortcutBarPopup.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinDrawTools.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinImage.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinManager.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinManagerApiHook.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinManagerColorFilter.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinManagerModuleList.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinManagerResource.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinManagerSchema.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObject.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectButton.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectComboBox.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectEdit.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectFrame.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectHeader.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectListBox.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectListView.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectMDI.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectMenu.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectProgress.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectScrollBar.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectSpin.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectStatusBar.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectTab.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectToolBar.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectTrackBar.h" />
+    <ClInclude Include="..\Include\SkinFramework\XTPSkinObjectTreeView.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditAutoCompleteWnd.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditBufferManager.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditColorComboBox.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditColorSampleText.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditCtrl.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditDefines.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditDoc.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditDrawTextProcessor.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditFindReplaceDlg.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditGoToLineDlg.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditLexCfgFileReader.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditLexClass.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditLexClassSubObjDef.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditLexClassSubObjT.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditLexColorFileReader.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditLexParser.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditLexPtrs.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditLineMarksManager.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditPaintManager.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditPropertiesDlg.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditPropertiesPage.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditSectionManager.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditSelection.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditStruct.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditTextIterator.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditToolTipCtrl.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditUndoManager.h" />
+    <ClInclude Include="..\Include\SyntaxEdit\XTPSyntaxEditView.h" />
+    <ClInclude Include="..\Include\TabManager\XTPTabControl.h" />
+    <ClInclude Include="..\Include\TabManager\XTPTabManager.h" />
+    <ClInclude Include="..\Include\TabManager\XTPTabManagerIncludes.h" />
+    <ClInclude Include="..\Include\TabManager\XTPTabPaintManager.h" />
+    <ClInclude Include="..\Include\TaskPanel\XTPTaskPanel.h" />
+    <ClInclude Include="..\Include\TaskPanel\XTPTaskPanelAnimation.h" />
+    <ClInclude Include="..\Include\TaskPanel\XTPTaskPanelDefines.h" />
+    <ClInclude Include="..\Include\TaskPanel\XTPTaskPanelGroup.h" />
+    <ClInclude Include="..\Include\TaskPanel\XTPTaskPanelGroupItem.h" />
+    <ClInclude Include="..\Include\TaskPanel\XTPTaskPanelItem.h" />
+    <ClInclude Include="..\Include\TaskPanel\XTPTaskPanelItems.h" />
+    <ClInclude Include="..\Include\TaskPanel\XTPTaskPanelPaintManager.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Include\CommandBars\XTPCommandBars.inl" />
+    <None Include="..\Include\Common\XTPPropExchange.inc" />
+    <None Include="..\Include\TabManager\XTPTabPaintManager.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Include\GraphicLibrary\libpng\license.txt" />
+    <Text Include="..\Include\GraphicLibrary\zlib\readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

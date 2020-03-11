@@ -1,0 +1,177 @@
+/*-------------------------------------------------------------------------*\
+|                                                                           |
+|  FILE: ISRTP.RUL	                                                    |
+|                                                                           |
+|                                                                           |
+|   RTPatch InstallShield(TM) Interface DLL Setup Script		    |
+|                                                                           |
+|                                                                           |
+|  (C) Copyright Pocket Soft, Inc. 1998-2002.  All Rights Reserved.         |
+|                                                                           |
+\*-------------------------------------------------------------------------*/
+function ISRTPatch(
+	szPatchFile,
+	szApplyDir,
+	szTitle,
+	szOptionsStr,
+	dwOptions,
+	dwVPos,
+	dwHPos )
+	STRING	szSupportDir;
+	STRING	szDllName;
+	STRING	svResult;
+	NUMBER	hwndMain;
+	NUMBER  	nvResult;
+	STRING	szCurrentDir;
+	INT		nRetVal;
+	INT 		nReturn;
+	BOOL		bChangedDir;
+	NUMBER	nPos, nLen;
+	STRING	szTemp, szTemp2;
+
+      begin
+
+        hwndMain = GetWindowHandle( HWND_INSTALL );
+	    szSupportDir = SUPPORTDIR;
+
+      // Store the current working directory, so that we may restore it after
+      // patching has completed. If successful, change the CWD to the SUPPORTDIR
+      // See Note below why we do this.
+      nReturn = GetCurrentFolder ( szCurrentDir);
+      if (nReturn > 0) then
+	  bChangedDir = TRUE;
+        ChangeDirectory (SUPPORTDIR);
+      endif;
+      
+      // Do not allow the /y switch. It will cause problems in IS 5.x
+      nPos = 0;
+      while (nPos > -1)
+        nPos = StrFind (szOptionsStr, "-y");
+        if (nPos < 0) then
+          nPos = StrFind (szOptionsStr, "/y");
+        endif;      
+        if (nPos > -1) then 
+          nLen = StrLength (szOptionsStr);
+          StrSub (szTemp, szOptionsStr, 0, nPos);
+          StrSub (szTemp2, szOptionsStr, nPos + 3, nLen); 
+          szOptionsStr = szTemp + " " + szTemp2;
+        endif;
+      endwhile;  
+
+      // Clean up the Apply Directory if needed. This entails removing
+      // any trailing backslashes, and coverting to a short path.
+      StrRemoveLastSlash (szApplyDir);
+	LongPathToShortPath (szApplyDir);
+      LongPathToShortPath (szPatchFile);
+
+
+	if ( bIs32BitSetup ) then
+	  szDllName = SUPPORTDIR ^ "isrtp32.dll";
+	  if ( UseDLL( szDllName ) ) then return 0x8004; endif;
+	  if ( bISRTPOverrides ) then
+	    if ( bISRTPLFPresent ) then
+	      ISRTPatch32SetText( szISRTPCopy1, szISRTPCopy2, szISRTPStatus,
+	        szISRTPLogFile );
+	    else
+	      ISRTPatch32SetText( szISRTPCopy1, szISRTPCopy2, szISRTPStatus,
+	        "" );
+	    endif;
+	  else
+	    if ( bISRTPLFPresent ) then
+	      ISRTPatch32SetText( "" ,"" ,"" ,szISRTPLogFile );
+	    endif;
+	  endif;
+	  nRetVal = ISRTPatch32 ( hwndMain, szSupportDir,
+	  	szPatchFile, szApplyDir, szTitle, szOptionsStr,
+		dwOptions, dwVPos, dwHPos );
+
+	  if ( nRetVal == -1 ) then nRetVal = 0x8005; endif;
+	else
+	  szDllName = SUPPORTDIR ^ "isrtp16.dll";
+	  if ( UseDLL( szDllName ) ) then return 0x8004; endif;
+	  if ( bISRTPOverrides ) then
+	    if ( bISRTPLFPresent ) then
+	      ISRTPatch16SetText( szISRTPCopy1, szISRTPCopy2, szISRTPStatus,
+	        szISRTPLogFile );
+	    else
+	      ISRTPatch16SetText( szISRTPCopy1, szISRTPCopy2, szISRTPStatus,
+	        "" );
+	    endif;
+	  else
+	    if ( bISRTPLFPresent ) then
+	      ISRTPatch16SetText( "" ,"" ,"" ,szISRTPLogFile );
+	    endif;
+	  endif;
+	  nRetVal = 0xffff & ISRTPatch16 ( hwndMain, szSupportDir,
+	  	szPatchFile, szApplyDir, szTitle, szOptionsStr,
+		dwOptions, dwVPos, dwHPos );
+	  if ( nRetVal == 0xffff ) then nRetVal = 0x8005; endif;
+	endif;
+	UnUseDLL( szDllName );
+
+      if (bChangedDir) then
+        ChangeDirectory (szCurrentDir);
+      endif;
+
+	ISRTPatchSetText( "" ,"" ,""  );	//make compiler shut up...
+	ISRTPatchSetLogFile( ""  );
+	bISRTPOverrides = 0;
+	bISRTPLFPresent = 0;
+	return nRetVal;
+      end;
+
+
+function ISRTPatchSetText( Copy1, Copy2, Status )
+      begin;
+        bISRTPOverrides=1;
+	szISRTPCopy1 = Copy1;
+	szISRTPCopy2 = Copy2;
+	szISRTPStatus = Status;
+      end;
+
+function ISRTPatchSetLogFile( LogFile )
+      begin;
+        bISRTPLFPresent=1;
+	szISRTPLogFile = LogFile;
+      end;
+
+
+
+// InstallShield does not [currently] have a built-in method of determining
+// the current working directory. ISRTPatch will use the current directory
+// to determine whether or not long filename support is available on the
+// target machine. Since some InstallShield setups are distributed via a
+// CD-ROM, this test will result in a negative response in the test for LFN
+// support. Consequently, we will [for now] change directory to the SUPPORTDIR
+// prior to patching. After patching has been completed, and before ISRTPatch
+// returns, the current working directory will be returned to its previous state.
+//
+// This function comes compliments of the InstallShield KB. Thanks.
+//
+function GetCurrentFolder ( svPath )
+
+    NUMBER nBufferLength, nReturn;
+
+begin
+    // Maximum string length.
+    nBufferLength = 511;
+    // Call the Windows API function.
+    nReturn = GetCurrentDirectory ( nBufferLength, svPath );
+    // If path string is too long, GetCurrentDirectory returns needed length.
+    if (nReturn > nBufferLength) then
+        return -1;
+    // If GetCurrentDirectory fails internally, it returns 0.
+    elseif (nReturn = 0) then
+        return -2;
+    // If GetCurrentDirectory succeeds, it returns the length of the path string.
+    else
+        return nReturn;
+    endif;
+end;
+
+
+
+
+
+
+

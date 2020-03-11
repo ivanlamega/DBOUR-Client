@@ -1,0 +1,399 @@
+/*-------------------------------------------------------------------------*\
+|                                                                           |
+|  FILE: ISRTP.RUL	                                                    |
+|                                                                           |
+|                                                                           |
+|  RTPatch InstallShield(TM) Interface DLL Setup Script		            |
+|                                                                           |
+|                                                                           |
+|  (C) Copyright Pocket Soft, Inc. 1998 - 2002.  All Rights Reserved.	    |
+|                                                                           |
+\*-------------------------------------------------------------------------*/
+function ISRTPatch( 
+	szPatchFile,
+	szApplyDir,
+	szTitle,
+	szOptionsStr,
+	dwOptions,
+	dwVPos,
+	dwHPos )
+	STRING	szSupportDir;
+	STRING	szDllName;        
+	STRING	svResult;  
+	STRING	szBlank;
+	NUMBER	hwndMain;
+	NUMBER  nvResult;
+	STRING	szCurrentDir;
+	INT		nRetVal;
+	INT 	nReturn;
+	BOOL	bChangedDir, bISFileManip;
+	NUMBER	nPos, nLen;
+	STRING  szTemp, szTemp2;  
+
+begin
+                 
+  hwndMain = GetWindowHandle( HWND_INSTALL );
+  szSupportDir = SUPPORTDIR;
+  szBlank = ""; 
+    
+  // Check to see if the /y switch is specified               
+  if ( (StrFind (szOptionsStr, "-y") > -1) || (StrFind (szOptionsStr, "/y") > -1) ) then     
+    bISFileManip = TRUE;
+  endif;  
+  
+  // Store the current working directory, so that we may restore it after
+  // patching has completed. If successful, change the CWD to the SUPPORTDIR
+  // See Note below why we do this.    
+  nReturn = GetCurrentFolder ( szCurrentDir);
+  if (nReturn > 0) then    
+    if (ChangeDirectory (SUPPORTDIR) == 0) then
+      bChangedDir = TRUE;
+    endif;  
+  else
+    // If we don't have the current directory we can't use
+    // the /y switch.
+    if (bISFileManip) then 
+      bISFileManip = FALSE;
+      nPos = StrFind (szOptionsStr, "-y");
+      if (nPos < 0) then
+        nPos = StrFind (szOptionsStr, "/y");
+      endif;
+      if (nPos > -1) then 
+        nLen = StrLength (szOptionsStr);
+        StrSub (szTemp, szOptionsStr, 0, nPos);
+        StrSub (szTemp2, szOptionsStr, nPos + 3, nLen); 
+        szOptionsStr = szTemp + " " + szTemp2;
+      endif;
+    endif;         
+  endif; 
+  
+  // Clean up the Apply Directory if needed. This entails removing
+  // any trailing backslashes, and coverting to a short path.
+  StrRemoveLastSlash (szApplyDir);
+  LongPathToShortPath (szApplyDir);      
+  LongPathToShortPath (szPatchFile);
+
+  szDllName = SUPPORTDIR ^ "isrtp32.dll";
+  if ( UseDLL( szDllName ) ) then return 0x8004; endif;
+  if ( bISRTPOverrides ) then
+    if ( bISRTPLFPresent ) then
+      ISRTPatch32SetText( szISRTPCopy1, szISRTPCopy2, szISRTPStatus,
+       szISRTPLogFile );
+    else
+      ISRTPatch32SetText( szISRTPCopy1, szISRTPCopy2, szISRTPStatus,
+          szBlank );
+    endif;
+  else
+    if ( bISRTPLFPresent ) then
+      ISRTPatch32SetText( szBlank , szBlank , szBlank , szISRTPLogFile );
+    endif;
+  endif;
+  nRetVal = ISRTPatch32 ( hwndMain, szSupportDir,
+    	 szPatchFile, szApplyDir, szTitle, szOptionsStr, 
+		 dwOptions, dwVPos, dwHPos );
+
+  if ( nRetVal == -1 ) then nRetVal = 0x8005; endif; 
+  UnUseDLL( szDllName );
+
+
+  ISRTPatchSetText( "" , "" , ""  );	//make compiler shut up...
+  ISRTPatchSetLogFile( ""  );
+  bISRTPOverrides = 0;
+  bISRTPLFPresent = 0;  
+ 
+  if (bISFileManip) then 
+    if (bChangedDir) then
+      ISRTPatchCommitChanges (SUPPORTDIR);
+    else  
+      ISRTPatchCommitChanges (szCurrentDir);
+    endif;              
+  endif;      
+  
+  if (bChangedDir) then
+    ChangeDirectory (szCurrentDir);
+  endif;
+  
+  return nRetVal;     
+  
+end;
+                   
+
+function ISRTPatchSetText( Copy1, Copy2, Status )
+begin;
+
+  bISRTPOverrides=1;
+  szISRTPCopy1 = Copy1;
+  szISRTPCopy2 = Copy2;
+  szISRTPStatus = Status;
+end;
+
+function ISRTPatchSetLogFile( LogFile )
+begin;
+  bISRTPLFPresent=1;
+  szISRTPLogFile = LogFile;
+end;           
+      
+      
+      
+// InstallShield does not [currently] have a built-in method of determining
+// the current working directory. ISRTPatch will use the current directory
+// to determine whether or not long filename support is available on the 
+// target machine. Since some InstallShield setups are distributed via a
+// CD-ROM, this test will result in a negative response in the test for LFN
+// support. Consequently, we will [for now] change directory to the SUPPORTDIR
+// prior to patching. After patching has been completed, and before ISRTPatch
+// returns, the current working directory will be returned to its previous state.
+//
+// This function comes compliments of the InstallShield KB. Thanks.
+// 
+function GetCurrentFolder ( svPath ) 
+  
+    NUMBER nBufferLength, nReturn; 
+  
+begin 
+    // Maximum string length. 
+    nBufferLength = 511; 
+    // Call the Windows API function. 
+    nReturn = GetCurrentDirectory ( nBufferLength, svPath ); 
+    // If path string is too long, GetCurrentDirectory returns needed length. 
+    if (nReturn > nBufferLength) then 
+        return -1; 
+    // If GetCurrentDirectory fails internally, it returns 0. 
+    elseif (nReturn = 0) then 
+        return -2; 
+    // If GetCurrentDirectory succeeds, it returns the length of the path string. 
+    else 
+        return nReturn; 
+    endif; 
+end; 
+       
+
+function NUMBER ISRTPatchCommitChanges (szPath)   
+
+	NUMBER	nResult;  		/* General Purpose retval		*/
+    NUMBER	nvFileHandle; 	/* Handle for the log file 		*/
+    STRING	szFileName;		/* Log file name				*/    
+    BOOL	Abort;			/* Indicates error mode			*/  
+    BOOL	Continue;		/* To determine eof 			*/  
+    
+    		/* These are the entries in the log */
+    STRING	SourceName;		/* Patched file's Old Name 		*/ 	
+    STRING	TargetName;		/* Patched file's New Name		*/
+    STRING	Shared;			/* File's shared status			*/
+    STRING	SelfReg;		/* File's selfreg status		*/
+    STRING	Backup;			/* Should we backup file?		*/    
+    
+    BOOL	bShared;		/* Bool to indicate shared		*/
+    BOOL	bSelfReg;		/* Bool to indicate selfreg		*/
+    BOOL	bBackup;		/* Bool to indicate backup		*/ 
+    BOOL	bLocked;		/* Bool for locked file			*/   
+    BOOL	bExists;		/* Bool for file existence		*/
+    
+    NUMBER	dwFileOptions;	/* File options for copy		*/   
+    STRING	FileNameOnly;	/* Used for on-reboot copy		*/
+    STRING	FilePathOnly;	/* Used for on-reboot copy		*/  
+    STRING	TargetNameOnly;	/* Name portion of target		*/   
+    STRING	TargetPathOnly;	/* Path portion of target		*/
+    STRING  szSupportDir;	/* Where to store temp file		*/ 
+    
+    BOOL 	AddPatch;       /* Special case - ADD file		*/
+    BOOL	DeletePatch;	/* Special case - DEL file		*/  
+    
+    // Vars to handle self-registration on reboot, if needed
+    STRING	szKey, szName, szSelfReg;
+    NUMBER 	nType, nSize;
+     
+
+
+//Temp vars
+STRING szTemp;
+
+begin
+    
+  // Initialize VARs 
+  Abort = FALSE; 
+  szSupportDir = SUPPORTDIR ^ "isrtp.tmp"; 
+
+  // Enable logging and batch registration 
+  Enable (LOGGING);
+  Enable (SELFREGISTERBATCH);
+       
+  szFileName = "isrtpcop.log"; 
+  OpenFileMode (FILE_MODE_NORMAL);      
+  nResult = OpenFile (nvFileHandle, szPath, szFileName);
+  if (nResult < 0) then
+    Abort = TRUE;
+  endif;                      
+   
+  Continue = TRUE; 
+  while (Continue)
+    if (GetLine (nvFileHandle, SourceName) < 0) then
+      Continue = FALSE;
+    elseif (GetLine (nvFileHandle, TargetName) < 0) then  
+      Continue = FALSE;
+    elseif (GetLine (nvFileHandle, Shared) < 0) then  
+      Continue = FALSE;
+    elseif (GetLine (nvFileHandle, SelfReg) < 0) then  
+      Continue = FALSE;
+    elseif (GetLine (nvFileHandle, Backup) < 0) then  
+    endif;    
+
+    if (Continue) then
+    
+      // Get the long path names:
+      LongPathFromShortPath (SourceName);
+      LongPathFromShortPath (TargetName);
+
+      // Is this file shared?	
+      StrToUpper (Shared, Shared);
+      bShared = (Shared == ISSHARED);
+                          
+      // Is this file self-registered? 
+      StrToUpper (SelfReg, SelfReg);
+      bSelfReg = (SelfReg == ISSELFREG);    
+    
+      // Do we need to backup this file? Ignored.                   
+      StrToUpper (Backup, Backup);
+      bBackup = (Backup == ISBACKUP);   
+                  
+      // InstallShield says to do this 
+      if (bSelfReg) then 
+        bShared = TRUE;
+      endif;                                     
+                                               
+      // Check to see if the destination name is locked and/or exists 
+      bExists = FALSE;
+      bLocked = FALSE;
+      bExists = Is (FILE_EXISTS, TargetName);
+      if (bExists) then
+        bLocked = Is (FILE_LOCKED, TargetName);
+      endif;
+                     
+
+      AddPatch = FALSE;
+      DeletePatch = FALSE;
+      if (TargetName == "") then
+        DeletePatch = TRUE;  
+      endif;  
+      if (SourceName == TargetName) then
+        AddPatch = TRUE;
+      endif;         
+
+      // If it's a DEL patch, just delete it 	 
+      // Check on SHARED SELFREG!				
+      if (DeletePatch) then        
+        // Check to see if the deleted file is shared 
+        if (bShared) then           
+          // Add code here to handle shared file deletes. Currently,
+          // we will not delete a shared file since InstallShield
+          // will attempt to delete the same file upon uninstallation.
+        else
+          if (bBackup) then
+            // Add code here if you want to backup files
+            // Currently, we ignore this option if the /y switch 
+            // is specified.
+            // i.e., CopyFile (SourceName, BackupDir);
+          endif;    
+          SetFileInfo (SourceName, FILE_ATTRIBUTE, FILE_ATTR_NORMAL, "");
+          nResult = DeleteFile (SourceName);
+        endif; // Shared   
+      endif; // Delete Patch 
+    
+  	  // If the destination file is not locked, delete it 
+	  if (!DeletePatch)then
+	    if (! AddPatch && ( Is (FILE_EXISTS, TargetName)== TRUE)) then
+	      SetFileInfo (TargetName, FILE_ATTRIBUTE, FILE_ATTR_NORMAL, "");
+          nResult = DeleteFile (TargetName); 
+          // If the delete failed, mark the file as locked 
+          if (nResult < 0) then
+            bLocked = TRUE;
+          endif;  
+        endif;  
+      
+        // If the destination file is not locked, and the delete	
+        // succeded, copy the target file to the destination name	
+        if (!bLocked) then
+          nResult = RenameFile (SourceName, TargetName); 
+          if (nResult == 0) then
+            SourceName = TargetName;             
+          else
+            bLocked = TRUE;
+          endif;    
+        endif;  
+        if (bLocked) then       
+          // The destination file is locked, so move the target file to	
+          // a temp location and do an on-reboot copy from there 		
+          ParsePath (FileNameOnly, SourceName, FILENAME);
+          ParsePath (FilePathOnly, SourceName, PATH);
+          ParsePath (TargetNameOnly, TargetName, FILENAME);                                  
+          CreateDir (szSupportDir ^ FileNameOnly);   
+          nResult = RenameFile  (SourceName, szSupportDir ^ FileNameOnly ^ TargetNameOnly);
+          if (nResult == 0) then
+            // Rename was successful
+            SourceName = szSupportDir ^ FileNameOnly ^ TargetNameOnly;
+          endif;
+        endif; // !Locked 
+      endif; // !DeletePatch                                  
+      
+      // Construct the file options parameter  
+      dwFileOptions = 0;       
+      if (bLocked) then 
+        dwFileOptions = COMP_NORMAL | LOCKEDFILE;  
+      else 
+        if (bShared) then
+          if (bSelfReg) then
+             dwFileOptions = SELFREGISTER | SHAREDFILE; 
+           else
+             dwFileOptions = SHAREDFILE;   
+           endif;
+        endif;  
+      endif;
+         
+          
+      // Whew! All that work, now finalize with the copy 	
+      // Only Add patches, and Locked files need this step	   
+      if (!DeletePatch) then                         
+        ParsePath (TargetPathOnly, TargetName, PATH);            
+        if (bShared && bLocked) then                         
+          XCopyFile (TargetName, TargetPathOnly, SHAREDFILE); 
+        endif;
+        if (bSelfReg && bLocked) then
+          XCopyFile (TargetName, TargetPathOnly, SHAREDFILE);
+          //Add regsvr to RunOnce on reboot, since it was locked
+          szKey = "Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce";
+          szName = "RegisterLockedFile"; 
+          nType = REGDB_STRING;
+          LongPathToShortPath (TargetName);
+          szSelfReg = WINSYSDIR ^ "regsvr32.exe" + " /s " + TargetName;
+          nSize = -1; 
+          RegDBSetDefaultRoot(HKEY_LOCAL_MACHINE);
+          Disable(LOGGING);
+          RegDBSetKeyValueEx(szKey, szName, nType, szSelfReg, nSize);
+          Enable(LOGGING);
+        endif;        
+        nResult = XCopyFile (SourceName, TargetPathOnly, dwFileOptions);   
+        Enable (LOGGING);
+      endif;  
+    endif; // Continue 
+  endwhile;
+  
+  // Execute all saved up self-registrations
+  Do (SELFREGISTRATIONPROCESS); 
+  CloseFile (nvFileHandle);
+  DeleteFile (szPath + szFileName);
+
+end;    
+ 
+//////////////////////////////////////////////////////////////////////////////
+//  FUNCTION:	OnRebooted
+//
+//  EVENT:      Rebooted event is sent when installation continues after the system
+//              has been rebooted.  Upon system reboot this will be the only 
+//              event sent from the InstallShield engine.
+//
+///////////////////////////////////////////////////////////////////////////////
+//function OnRebooted()
+//begin
+//  DeleteDir (SUPPORTDIR ^ "isrtp.tmp", ALLCONTENTS);
+//end;
+ 

@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="precomp_shopedit.cpp">
+      <Filter>Precomp</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopEditApplication.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="precomp_shopedit.h">
+      <Filter>Precomp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpadc.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpanisot.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpcollis.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpcriter.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpcrowd.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpdbgerr.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpdmorph.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpdpvs.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpenv.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rperror.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rphanim.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpid.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rplodatm.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rplogo.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpltmap.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpmatfx.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpmipkl.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpmorph.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpnormmap.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rppatch.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpprtadv.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpprtstd.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpptank.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rppvs.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rprandom.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpskin.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpspline.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpteam.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rptoon.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpusrdat.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpuvanim.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rpworld.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rt2d.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rt2danim.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtanim.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtbary.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtbezpat.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtbmp.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtcharse.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtcmpkey.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtdict.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtfsyst.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtgcond.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtgncpip.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtimport.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtintsec.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtltmap.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtltmapcnv.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtmipk.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtnormmap.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtpick.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtpitexd.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtpng.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtquat.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtras.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtray.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtskinsp.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtslerp.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtsplpvs.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rttiff.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rttilerd.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rttoc.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rttoon.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtvcat.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtwing.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rtworld.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rwcore.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rwplcore.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Renderware\Include\rwversion.h">
+      <Filter>Renderware</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopEditApplication.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\Renderware\Lib\debug\rpadc.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpanisot.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpcollis.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpcrowd.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpdmorph.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpenv.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rphanim.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpid.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rplodatm.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rplogo.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpltmap.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpmatfx.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpmipkl.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpmorph.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpnormmap.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpnormmapskin.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rppatch.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rppatchmatfx.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rppatchskin.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rppatchskinmatfx.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpprtadv.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpprtstd.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpptank.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rppvs.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rprandom.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpskin.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpskinmatfx.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpskinmatfxtoon.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpskintoon.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpspline.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpteam.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rptoon.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpusrdat.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpuvanim.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rpworld.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rt2d.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rt2danim.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtanim.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtbary.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtbezpat.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtbmp.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtcharse.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtcmpkey.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtdict.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtfsyst.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtgcond.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtgncpip.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtimport.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtintsec.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtltmap.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtltmapcnv.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtmipk.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtmipkmatfx.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtmipkpatch.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtmipkpatchmatfx.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtnormmap.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtpick.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtpitexd.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtpng.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtpngcw.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtquat.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtras.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtray.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtskinsp.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtslerp.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtsplpvs.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rttiff.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rttilerd.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rttoc.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rttoon.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtvcat.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtwing.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rtworld.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rwcore.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+    <Library Include="..\..\Renderware\Lib\debug\rwplcore.lib">
+      <Filter>Renderware</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Renderware">
+      <UniqueIdentifier>{161a3a88-1e3f-4852-a930-1d4424e9ecd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precomp">
+      <UniqueIdentifier>{11528d5f-c01e-4707-8526-a460f29d2051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{80a912a4-43f6-4746-ac5b-898513f615d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

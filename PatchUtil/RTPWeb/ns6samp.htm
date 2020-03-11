@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>Sample HTML for Web RTPatch Control - Script (Minimal) Sample</TITLE>
+
+<script>
+var xpi = new Object(); 
+var ThisVersion = "6.5.0.0";
+var PluginPath = "http://your.server.com/nppatch.xpi";
+
+function statusCallback(url, status) { 
+  var text; 
+  var restart = false; 
+
+  for (i in xpi) 
+  { 
+    text = "    "+i+": "; 
+    switch (status) { 
+      case 999: 
+        restart = true;     // fall-through 
+      case 0: 
+        navigator.plugins.refresh(true);
+        break; 
+      default: 
+        dlg = window.open("","resultWindow"); 
+        dlg.document.write("<head><title>Web RTPatch XPInstall Results</title></head>"); 
+        dlg.document.write("<body><h1>Web RTPatch XPInstall Results</h1>"); 
+        text += "Error encountered -- "+status; 
+        text += "<br>"; 
+        dlg.document.write(text); 
+        dlg.document.write("</body>"); 
+        dlg.document.close(); 
+        break; 
+    } 
+  } 
+} 
+
+function launchWebRTPatchInstall() 
+{ 
+    xpi = new Object();
+    xpi["Web RTPatch Version " + ThisVersion + " for Netscape"] = PluginPath; 
+    InstallTrigger.install(xpi,statusCallback); 
+} 
+
+</script>
+
+
+</HEAD>
+<BODY>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+if ( (navigator.appName == "Netscape") &  (navigator.appVersion.substring(0,1) >= "5") )
+{
+  if (InstallTrigger.compareVersion("Web RTPatch",  ThisVersion) < 0)
+  {
+    launchWebRTPatchInstall();
+  }
+}
+</SCRIPT>
+
+<EMBED TYPE="application/x-RTPatch-File"
+  PLUGINURL="http://your.server.com/nppatch.xpi"
+  HEIGHT="80"
+  WIDTH="320"
+  SCRIPT="http://your.server.com/sample.scr"
+  PATCHURL="http://your.server.com/patchw32.dll"
+  PATCHFILE="http://your.server.com/patch.rtp">
+</EMBED>
+
+</BODY>
+</HTML>
+

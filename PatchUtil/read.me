@@ -1,0 +1,133 @@
+RELEASE NOTES
+RTPatch(r) Pro for Windows
+Version 6.50
+
+(c) Copyright 1991-2002  Pocket Soft, Inc.
+
+ALL RIGHTS RESERVED
+
+Installation
+
+To install the enclosed version, put the CD in your drive. If 
+the setup does not automatically start, browse to the CD drive, 
+and run setup.exe.
+
+RTPatch Pro 6.50 Notes
+
+Version 6.50 is an interim release designed to meet customer 
+feature requests as well as fix a few minor bugs. 
+
+1. RTPatch (General):
+
+  a. New MAINTENANCE command and utility allows you to easily add 
+     and extract information from the users' registries regarding 
+     which patch files have been applied, the last return value, 
+     certain error information, whether or not the patch has been 
+     reversed (BACKUP option), and when the patch was applied.
+
+  b. New registry scripting macros allow you to easily access the 
+     Target, SystemTag, Temp, Windows, Windows System, and Backup 
+     directories from within your RTPatch registry scripts
+
+  c. Optionally send deleted files (old versions) to the RecycleBin, 
+     rather than a complete delete from the system
+
+  d. New command UPDATETIMESTAMP allows you to "touch" files 
+     regardless of the files' previous timestamp
+
+  e. New TEMPDIR command allows you to specify a different storage 
+     location for temporary files. This is useful for UNDO support 
+     on very large systems.
+
+  f. DOAFTERALL/DOBEFOREALL may now be invoked with a $ parameter 
+     that will expand to the full path to the current patch file. 
+     Supply a $$ if your parameter requires a literal dollar sign
+
+  g. Cross-platform UNIX RTPatch patch file support. Build patch 
+     files with UNIX versions of RTPatch, and apply with the Windows 
+     apply modules.
+
+  h. Ability to disable delayed patching added
+
+  i. New API callbacks for added control over patching and delayed 
+     copy support (0x1C added; 0x7 enhanced for finer control)
+
+  j. Log file option added to interface module
+
+  k. MSI 2.0 Support
+
+  l. All utilities are now 32-bit console applications
+
+  m. VB.Net added to examples
+
+  n. New sample added for MSVC 6.0
+
+  o. Timestamps are now accurate to a one second granularity when 
+     the file system permits
+
+
+
+2. EZPatch:
+
+  a. New log file option added
+
+  b. Ability to hide the EZPatch main window
+
+  c. Add a custom BMP as a splash screen or main window background
+
+
+
+3. Web RTPatch
+
+  a. Netscape 6 support added
+
+  b. Several redirection options added to redirect the browser 
+     after successful patch completion, error or cancellation
+
+
+
+4. Auto RTPatch
+
+  a. Cancellation response time enhanced
+
+  b. All URLs now automatically canonicalized
+
+
+
+5. BUGS
+
+  a. (BUILD) HKU now supported in ROOTKEY and SYSTEMKEY
+
+  b. (APPLY) UNC paths fixed for free disk space check
+
+  c. (APPLY) Delayed self-registration would fail in some 
+             situations
+
+  d. (APPLY) History patch files using CHECKTIMEDATE would 
+             produce spurious error 36 codes due to mismatched 
+             attributes, even when not using CHECKATTRIBUTE
+
+  e. (APPLY, BUILD) Long file name support detection corrected 
+             to work on Samba
+
+  f. (APPLY) Callback 0x7 now sent even if an error 15/36 is 
+             produced
+
+  g. (Auto RTPatch, Web RTPatch) Long paths to Authenticode 
+             certificates now supported
+
+  h. BUILD) Wizard now automatically quotes icon path
+
+  i. (Auto RTPatch) log file option fixed
+
+  j. (Web RTPatch) Multiple safe controls now supported on one page
+
+  k. (Build Wizard) CHECKTIMEDATE command fixed
+  
+  l. Interface module's import library had incorrect declaration
+
+
+
+POCKET SOFT, INC.                  Phone:  713-460-5600 (9:00am - 5:00pm CST)
+P. O. Box 821049                   Fax:	   713-460-2651 
+Houston, TX USA 77282-1049         support@pocketsoft.com   		 	 

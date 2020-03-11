@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Common\Resource">
+      <UniqueIdentifier>{73ae6a3d-bcba-4f3c-9cec-bb181e3ae3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Resource\PreCompiledHeader">
+      <UniqueIdentifier>{e681b812-31a2-46bc-99f5-9168ee7de2f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExporterManager">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NavExporterTest.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Common\Resource\PreCompiledHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="CNtlWeManager.cpp">
+      <Filter>ExporterManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NavExporterTest.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Common\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Common\Resource\PreCompiledHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CNtlWeManager.h">
+      <Filter>ExporterManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NavExporterTest.ico">
+      <Filter>Common\Resource</Filter>
+    </None>
+    <None Include="small.ico">
+      <Filter>Common\Resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NavExporterTest.rc">
+      <Filter>Common\Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

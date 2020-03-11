@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Common\PreCompiledHeader">
+      <UniqueIdentifier>{ae4257ed-e0ad-46c6-b74e-0cd17b875c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MemoryBuffer">
+      <UniqueIdentifier>{2954fdaf-5d80-4501-8961-e64e5930dbed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MemoryBuffer\OutputStream">
+      <UniqueIdentifier>{562f06ad-0b9f-4e32-9480-21d19a6a8b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MemoryBuffer\Converter">
+      <UniqueIdentifier>{b3f909dd-2bdb-44a0-854d-2cbd2316b4ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\XMLParser">
+      <UniqueIdentifier>{7c6e3e7b-779d-411b-8241-6b7be69979fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\XMLParser\CStringNode">
+      <UniqueIdentifier>{537a0260-2b49-43d0-854d-518705498acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\XMLParser\CStringNode\Unicode">
+      <UniqueIdentifier>{dfb624d6-c8c4-4878-ad3a-cdd8888dc5f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\XMLParser\CStringNode\Ansi">
+      <UniqueIdentifier>{95dd7fc5-18ad-49af-9499-730f90731837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\XMLParser\CStringNodeList">
+      <UniqueIdentifier>{b492412f-ee39-48c4-a6b0-8510b5c7bf74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\XMLParser\CStringNodeList\Ansi">
+      <UniqueIdentifier>{7da37631-2ef9-4c9d-bf3b-3cd4927b553b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\XMLParser\CStringNodeList\Unicode">
+      <UniqueIdentifier>{f13d7032-0872-4258-a732-be5bd22ecaf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Renderer">
+      <UniqueIdentifier>{0673afc7-2a22-4abc-a9c0-1002d901e139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Debug">
+      <UniqueIdentifier>{d4d44eae-5206-4a89-b9aa-dbde88f3153e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Thread">
+      <UniqueIdentifier>{47d6b56d-16ce-4df3-bcc2-8a7ac1a1b5fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Thread\BaseThread">
+      <UniqueIdentifier>{cc660c08-fb93-470f-920c-e88822b268e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Thread\ThreadManager">
+      <UniqueIdentifier>{5c7a9cbb-3faa-4318-8903-cec8b3e259bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Thread\ThreadManager\CActiveThreadList">
+      <UniqueIdentifier>{c958a2e6-b151-43c1-a23b-81d0333d2911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Thread\Queue">
+      <UniqueIdentifier>{c6748008-f617-41da-a3bd-ecc7cfc2b2ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Thread\Queue\SingleQueue">
+      <UniqueIdentifier>{0d8224be-6bf8-4b79-a552-f0e57a011fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Thread\Queue\MutipleQueue">
+      <UniqueIdentifier>{a8615be1-c00d-4e4e-8b4f-9d650fc8cf8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\StringContainer">
+      <UniqueIdentifier>{67b41ba5-524f-487d-845f-1fb02cdd8e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Resource">
+      <UniqueIdentifier>{229adf70-edda-42ab-be29-d908863cebf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\File">
+      <UniqueIdentifier>{2231eb0e-a5a6-43bc-a615-cd7091351f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathEngine">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="PathEngine\ErrorHandler">
+      <UniqueIdentifier>{014ed788-aa7e-4e65-b7af-d27bd226e8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathEngine\FaceVertexMesh">
+      <UniqueIdentifier>{03121a57-f93c-4d1b-9130-29df30c0a62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathEngine\PathEngine">
+      <UniqueIdentifier>{72dd8698-1001-47ce-bf9d-40c495c1417d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathEngine\Thread">
+      <UniqueIdentifier>{1595d340-e4b6-4e4d-8b00-0bd59b8c6571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathEngine\Thread\Thread">
+      <UniqueIdentifier>{699795f6-40c7-44ae-abb7-73f46ab85527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathEngine\Thread\Thread\LoadMesh">
+      <UniqueIdentifier>{7bbd71de-3af9-44f2-9bd8-167f60c3b005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathEngine\Thread\Thread\PreProcess">
+      <UniqueIdentifier>{9f28f9b7-a358-40fd-9b47-3eb81ecaa4f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathEngine\Thread\Thread\ExportMesh">
+      <UniqueIdentifier>{ebf389c4-54c6-4d45-a98e-c5be0f359928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{090a3d9b-e6b2-4914-88cb-21a63a289456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Physic">
+      <UniqueIdentifier>{84bda37c-e9b0-4052-b902-c3bc760e24b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Physic\HeightMap">
+      <UniqueIdentifier>{d1a87215-1d8c-44d4-9254-53fd8f914161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Physic\Object">
+      <UniqueIdentifier>{a19be5b0-bace-4e93-b756-78cea1e25dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Physic\Terrain">
+      <UniqueIdentifier>{469d66af-800f-46ff-a927-9ef09e44e888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Structure">
+      <UniqueIdentifier>{bc6e2ad4-5fdb-49bf-9bee-65a15266285e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Structure\Sector">
+      <UniqueIdentifier>{9fe8752c-9b4d-4206-94a8-3de7d65a6791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Structure\World">
+      <UniqueIdentifier>{dfeb0d92-f969-4a23-8876-7ba04497b722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Structure\Zone">
+      <UniqueIdentifier>{d77ffc23-ad0a-4137-89c9-b73b336d8998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Reference">
+      <UniqueIdentifier>{5cfc4c65-b42c-4bad-aee7-05c8d73ca602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Reference\Area">
+      <UniqueIdentifier>{8e11146f-d170-4563-be38-ae547c520637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Reference\Section">
+      <UniqueIdentifier>{cd6c43d7-9e21-499e-8860-2f01413f71bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Reference\Portal">
+      <UniqueIdentifier>{c820bd9a-0dc8-4d4f-b95c-5b00551d933a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Interface">
+      <UniqueIdentifier>{bc01444b-fd47-46e3-91f8-af88cd2f4bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Interface\Navigator">
+      <UniqueIdentifier>{1a0da8c9-fd67-45fd-b504-236a2b01fcb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Interface\Path">
+      <UniqueIdentifier>{5c839fde-2d93-48fb-98bc-80216dbf82ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Interface\Path\QueryCallback">
+      <UniqueIdentifier>{888c120b-bb4f-4dbf-88c3-2bb40190db7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport">
+      <UniqueIdentifier>{d59b79be-1b42-4221-a083-0af9c5ee08ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Factory">
+      <UniqueIdentifier>{13afb2b1-f2a4-4bcb-ae44-55fe85b72067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\StringTable">
+      <UniqueIdentifier>{7a6cc8a3-18c4-4870-a452-06f81af7d366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Container">
+      <UniqueIdentifier>{e8dcbe3b-35d5-43e1-9ffe-8c0041b83a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Container\EntityVector">
+      <UniqueIdentifier>{0aaf829d-8943-4392-a5e1-d40af2e3a9df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Container\EntityList">
+      <UniqueIdentifier>{75d06889-223a-4b27-92a4-4cf6bb02fa05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Container\EntityList\EntityNode">
+      <UniqueIdentifier>{f65081a5-b9b0-4c44-aef8-d01e34a2940b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Container\EntityHash">
+      <UniqueIdentifier>{5b96e62e-6b37-4902-ac50-aebfc75d08b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Position&amp;Bounding">
+      <UniqueIdentifier>{4be8209b-eed2-48bb-adbb-332822380f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Position&amp;Bounding\Position">
+      <UniqueIdentifier>{ef8f2230-7cb4-4a5f-b231-961cbf2f60d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Position&amp;Bounding\PositionList">
+      <UniqueIdentifier>{671cc442-35a2-403f-a10f-1208b4ac2769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\Position&amp;Bounding\Bounding">
+      <UniqueIdentifier>{fa1e56d1-0069-4781-895e-312016ce5b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntitySupport\ShapeManager">
+      <UniqueIdentifier>{2a25667b-97c6-4f7b-9c04-987eb808dc75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NavBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Common\PreCompiledHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CMemoryBuffer.h">
+      <Filter>Common\MemoryBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavOutputStream.h">
+      <Filter>Common\MemoryBuffer\OutputStream</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavConverter.h">
+      <Filter>Common\MemoryBuffer\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="CXMLParserW.h">
+      <Filter>Common\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="CFixedStringTreeNodeW.h">
+      <Filter>Common\XMLParser\CStringNode\Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="CFixedStringTreeW.h">
+      <Filter>Common\XMLParser\CStringNodeList\Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavRenderer.h">
+      <Filter>Common\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugEx.h">
+      <Filter>Common\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseThread.h">
+      <Filter>Common\Thread\BaseThread</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseThreadManager.h">
+      <Filter>Common\Thread\ThreadManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CActiveThreadList.h">
+      <Filter>Common\Thread\ThreadManager\CActiveThreadList</Filter>
+    </ClInclude>
+    <ClInclude Include="CSingleQueue.h">
+      <Filter>Common\Thread\Queue\SingleQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="CMultipleQueue.h">
+      <Filter>Common\Thread\Queue\MutipleQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="CFixedStringHashTable.h">
+      <Filter>Common\StringContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="CFixedStringLinkedList.h">
+      <Filter>Common\StringContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="CFixedStringListNode.h">
+      <Filter>Common\StringContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Common\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavFilePath.h">
+      <Filter>Common\File</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavErrorHandler.h">
+      <Filter>PathEngine\ErrorHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavFaceVertexMesh.h">
+      <Filter>PathEngine\FaceVertexMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceVertexMeshBase.h">
+      <Filter>PathEngine\FaceVertexMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPathEngine.h">
+      <Filter>PathEngine\PathEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavLoadMeshThread.h">
+      <Filter>PathEngine\Thread\Thread\LoadMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPreProcessThread.h">
+      <Filter>PathEngine\Thread\Thread\PreProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavExportMeshThread.h">
+      <Filter>PathEngine\Thread\Thread\ExportMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavEntity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavHeightMap.h">
+      <Filter>Entity\Physic\HeightMap</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavObject.h">
+      <Filter>Entity\Physic\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavTerrain.h">
+      <Filter>Entity\Physic\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavSector.h">
+      <Filter>Entity\Structure\Sector</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavWorld.h">
+      <Filter>Entity\Structure\World</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavZone.h">
+      <Filter>Entity\Structure\Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavArea.h">
+      <Filter>Entity\Reference\Area</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavSection.h">
+      <Filter>Entity\Reference\Section</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPortal.h">
+      <Filter>Entity\Reference\Portal</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavigator.h">
+      <Filter>Entity\Interface\Navigator</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPath.h">
+      <Filter>Entity\Interface\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavQueryCallback.h">
+      <Filter>Entity\Interface\Path\QueryCallback</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavEntityHierarchy.h">
+      <Filter>EntitySupport</Filter>
+    </ClInclude>
+    <ClInclude Include="NavEntityBase.h">
+      <Filter>EntitySupport</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavEntityFactory.h">
+      <Filter>EntitySupport\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavStringTable.h">
+      <Filter>EntitySupport\StringTable</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavEntityVector.h">
+      <Filter>EntitySupport\Container\EntityVector</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavEntityLinkedList.h">
+      <Filter>EntitySupport\Container\EntityList</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavEntityNode.h">
+      <Filter>EntitySupport\Container\EntityList\EntityNode</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavEntityHashTable.h">
+      <Filter>EntitySupport\Container\EntityHash</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPosition.h">
+      <Filter>EntitySupport\Position&amp;Bounding\Position</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPosition2D.h">
+      <Filter>EntitySupport\Position&amp;Bounding\Position</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPositionList.h">
+      <Filter>EntitySupport\Position&amp;Bounding\PositionList</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavBounding.h">
+      <Filter>EntitySupport\Position&amp;Bounding\Bounding</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavBounding2D.h">
+      <Filter>EntitySupport\Position&amp;Bounding\Bounding</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavShapeManager.h">
+      <Filter>EntitySupport\ShapeManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Common\PreCompiledHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="CMemoryBuffer.cpp">
+      <Filter>Common\MemoryBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavOutputStream.cpp">
+      <Filter>Common\MemoryBuffer\OutputStream</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavConverter.cpp">
+      <Filter>Common\MemoryBuffer\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="CXMLParserW.cpp">
+      <Filter>Common\XMLParser</Filter>
+    </ClCompile>
+    <ClCompile Include="CFixedStringTreeNodeW.cpp">
+      <Filter>Common\XMLParser\CStringNode\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="CFixedStringTreeW.cpp">
+      <Filter>Common\XMLParser\CStringNodeList\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavRenderer.cpp">
+      <Filter>Common\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseThread.cpp">
+      <Filter>Common\Thread\BaseThread</Filter>
+    </ClCompile>
+    <ClCompile Include="CBaseThreadManager.cpp">
+      <Filter>Common\Thread\ThreadManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CActiveThreadList.cpp">
+      <Filter>Common\Thread\ThreadManager\CActiveThreadList</Filter>
+    </ClCompile>
+    <ClCompile Include="CSingleQueue.cpp">
+      <Filter>Common\Thread\Queue\SingleQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="CMultipleQueue.cpp">
+      <Filter>Common\Thread\Queue\MutipleQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="CFixedStringHashTable.cpp">
+      <Filter>Common\StringContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="CFixedStringLinkedList.cpp">
+      <Filter>Common\StringContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="CFixedStringListNode.cpp">
+      <Filter>Common\StringContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavErrorHandler.cpp">
+      <Filter>PathEngine\ErrorHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavErrorHandler_Instance.cpp">
+      <Filter>PathEngine\ErrorHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavFaceVertexMesh.cpp">
+      <Filter>PathEngine\FaceVertexMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavFaceVertexMesh_iFaceVertexMesh.cpp">
+      <Filter>PathEngine\FaceVertexMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPathEngine.cpp">
+      <Filter>PathEngine\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPathEngine_Instance.cpp">
+      <Filter>PathEngine\PathEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavLoadMeshThread.cpp">
+      <Filter>PathEngine\Thread\Thread\LoadMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPreProcessThread.cpp">
+      <Filter>PathEngine\Thread\Thread\PreProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavExportMeshThread.cpp">
+      <Filter>PathEngine\Thread\Thread\ExportMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavEntity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavHeightMap.cpp">
+      <Filter>Entity\Physic\HeightMap</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavHeightMap_Parse.cpp">
+      <Filter>Entity\Physic\HeightMap</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavObject.cpp">
+      <Filter>Entity\Physic\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavObject_Agent.cpp">
+      <Filter>Entity\Physic\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavTerrain.cpp">
+      <Filter>Entity\Physic\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavTerrain_Callback.cpp">
+      <Filter>Entity\Physic\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavTerrain_Mesh.cpp">
+      <Filter>Entity\Physic\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavTerrain_Object.cpp">
+      <Filter>Entity\Physic\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavTerrain_Parse.cpp">
+      <Filter>Entity\Physic\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavSector.cpp">
+      <Filter>Entity\Structure\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavSector_Callback.cpp">
+      <Filter>Entity\Structure\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavSector_HeightMap.cpp">
+      <Filter>Entity\Structure\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavWorld.cpp">
+      <Filter>Entity\Structure\World</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavWorld_Callback.cpp">
+      <Filter>Entity\Structure\World</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavWorld_Parse.cpp">
+      <Filter>Entity\Structure\World</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavWorld_Sector.cpp">
+      <Filter>Entity\Structure\World</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavWorld_Zone.cpp">
+      <Filter>Entity\Structure\World</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavZone.cpp">
+      <Filter>Entity\Structure\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavZone_Area.cpp">
+      <Filter>Entity\Structure\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavZone_Callback.cpp">
+      <Filter>Entity\Structure\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavZone_Parse.cpp">
+      <Filter>Entity\Structure\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavZone_Portal.cpp">
+      <Filter>Entity\Structure\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavZone_Section.cpp">
+      <Filter>Entity\Structure\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavZone_Sector.cpp">
+      <Filter>Entity\Structure\Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavigator.cpp">
+      <Filter>Entity\Interface\Navigator</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavigator_Callback.cpp">
+      <Filter>Entity\Interface\Navigator</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavigator_Instance.cpp">
+      <Filter>Entity\Interface\Navigator</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavigator_Parse.cpp">
+      <Filter>Entity\Interface\Navigator</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavigator_World.cpp">
+      <Filter>Entity\Interface\Navigator</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPath.cpp">
+      <Filter>Entity\Interface\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPath_FindPath.cpp">
+      <Filter>Entity\Interface\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavQueryCallback.cpp">
+      <Filter>Entity\Interface\Path\QueryCallback</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavEntityFactory.cpp">
+      <Filter>EntitySupport\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavEntityFactory_Instance.cpp">
+      <Filter>EntitySupport\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavStringTable.cpp">
+      <Filter>EntitySupport\StringTable</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavEntityVector.cpp">
+      <Filter>EntitySupport\Container\EntityVector</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavEntityVector_Error.cpp">
+      <Filter>EntitySupport\Container\EntityVector</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavEntityLinkedList.cpp">
+      <Filter>EntitySupport\Container\EntityList</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavEntityNode.cpp">
+      <Filter>EntitySupport\Container\EntityList\EntityNode</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavEntityHashTable.cpp">
+      <Filter>EntitySupport\Container\EntityHash</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPositionList.cpp">
+      <Filter>EntitySupport\Position&amp;Bounding\PositionList</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavShapeManager.cpp">
+      <Filter>EntitySupport\ShapeManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Navigator.rc">
+      <Filter>PathEngine</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

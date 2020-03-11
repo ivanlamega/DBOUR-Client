@@ -1,0 +1,19 @@
+//---------------------------
+// resources
+//---------------------------
+
+#include "pbindw32.rc"	// or "pbindwin.rc" for a 16-bit executable
+#include "winuser.h"
+#include "resource.h"
+
+STATUSBOX DIALOG DISCARDABLE  0, 0, 288, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Status"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "",IDC_COPYRIGHT,4,3,280,8
+    CTEXT           "",IDC_COPYRIGHT2,4,15,280,8
+    CTEXT           "",IDC_STATUS,0,38,284,8
+    LTEXT           "",IDC_PROGRESS,58,59,171,8,NOT WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,102,69,85,22
+END

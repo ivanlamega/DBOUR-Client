@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{e70fae26-da7d-4755-8122-acc2257b8239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Tile">
+      <UniqueIdentifier>{9b6308d2-fa9c-435e-a861-3ab3f3af7fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\NavPositionFaceVertexMesh">
+      <UniqueIdentifier>{819c2673-b4bc-4d34-9a67-511a810dfabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Converter">
+      <UniqueIdentifier>{5d9bbc97-85ee-4056-8a4d-1b62223c2360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Obstacle">
+      <UniqueIdentifier>{d189c5ad-f787-4014-ab06-f7ed6b003374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Obstacle\Polygon">
+      <UniqueIdentifier>{ac0c2e32-3b2c-448d-b8b7-2434d00d4677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Obstacle\Polygon\Face">
+      <UniqueIdentifier>{fa1b08ca-c673-4d10-8bd5-48ce794a7dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{f41923b5-77ce-4122-9dc5-71dd7b25747e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\PlatformBase">
+      <UniqueIdentifier>{b9283f51-cfad-4f13-802c-ef07f1a6ff57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\PreCompiledHeader">
+      <UniqueIdentifier>{3fa33a94-802f-4665-bf5d-0a0b4c8d9737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Resource">
+      <UniqueIdentifier>{1e02a90a-c8d9-48e0-93ca-e7a1b5307887}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CWeManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavTile.cpp">
+      <Filter>Manager\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPositionFaceVertexMesh.cpp">
+      <Filter>Manager\NavPositionFaceVertexMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPositionFaceVertexMesh_Optimize.cpp">
+      <Filter>Manager\NavPositionFaceVertexMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="CWeConverter.cpp">
+      <Filter>Manager\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="CWeConverter_HeightMap.cpp">
+      <Filter>Manager\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="CWeConverter_Obsoleted.cpp">
+      <Filter>Manager\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="CWeConverter_Obstacle.cpp">
+      <Filter>Manager\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="CWeConverter_Terrain.cpp">
+      <Filter>Manager\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavPolygon.cpp">
+      <Filter>Manager\Obstacle\Polygon</Filter>
+    </ClCompile>
+    <ClCompile Include="CNavIndexedFaceList.cpp">
+      <Filter>Manager\Obstacle\Polygon\Face</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Common\PreCompiledHeader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CWeManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavTile.h">
+      <Filter>Manager\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPositionFaceVertexMesh.h">
+      <Filter>Manager\NavPositionFaceVertexMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="CWeConverter.h">
+      <Filter>Manager\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavPolygon.h">
+      <Filter>Manager\Obstacle\Polygon</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavIndexedFace.h">
+      <Filter>Manager\Obstacle\Polygon\Face</Filter>
+    </ClInclude>
+    <ClInclude Include="CNavIndexedFaceList.h">
+      <Filter>Manager\Obstacle\Polygon\Face</Filter>
+    </ClInclude>
+    <ClInclude Include="NavExporter.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="NavExporterBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="NavExStringTable.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="NtlWeBase.h">
+      <Filter>Common\PlatformBase</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Common\PreCompiledHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Common\Resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NavExporter.rc">
+      <Filter>Common\Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

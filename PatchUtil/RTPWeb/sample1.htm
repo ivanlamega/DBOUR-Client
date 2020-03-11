@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>Sample HTML for Web RTPatch Control - Script (Minimal) Sample</TITLE>
+</HEAD>
+<BODY>
+
+
+
+<OBJECT ID="PatchCtl" 
+ CLASSID="CLSID:5D8844F9-1CB8-11D2-A0A0-00600859EB9F"
+ CODEBASE="ftp://your.server.com/patchx.cab#version=6,50,0,1"
+ HEIGHT=80
+ WIDTH=320
+>
+<PARAM NAME=Script VALUE=ftp://your.server.com/your.script>
+<PARAM NAME=PatchURL VALUE=ftp://your.server.com/patchw32.dll>
+<PARAM NAME=PatchFile VALUE=ftp://your.server.com/patch.rtp>
+<EMBED TYPE="application/x-RTPatch-File"
+  PLUGINURL="ftp://your.server.com/nppatch.jar"
+  HEIGHT="80"
+  WIDTH="320"
+  Script="ftp://your.server.com/your.script"
+  PatchURL="ftp://your.server.com/patchw32.dll"
+  PatchFile="ftp://your.server.com/patch.rtp"
+>
+</EMBED>
+</OBJECT>
+
+
+
+</BODY>
+</HTML>
+

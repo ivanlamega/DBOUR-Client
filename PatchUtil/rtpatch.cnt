@@ -1,0 +1,431 @@
+:Base rtpatch.hlp
+1 Welcome to RTPatch Professional=Welcome_to_RTPatch_Professional
+1 Introduction
+2 Platforms=Platforms
+2 How RTPatch Works=How_RTPatch_Works
+2 Options for Building and Applying Patches=Options_for_Building_and_Applying_Patches
+2 About this Manual=About_this_Manual
+2 Features of RTPatch Professional=Features_of_RTPatch_Professional
+2 Using RTPatch for the First Time=Using_RTPatch_for_the_First_Time
+2 Installing RTPatch System Files=Installing_RTPatch_System_Files
+2 Setting the Environment for RTPatch=Setting_the_Environment_for_RTPatch
+2 Versions of PATCHBLD=Versions_od_PATCHBLD
+2 On-Line Help=On_Line_Help
+2 Getting Technical Support=Getting_Technical_Support
+2 Error and Warning Messages=Error_and_Warning_Messages
+2 Package Contents
+3 Files for Building Patches=Files_for_Building_Patches
+3 Files for Applying Patches=Files_for_Applying_Patches
+3 Documentation Files=Documentation_Files
+3 Utility Programs=Utility_Programs
+1 Building a Patch File
+2 Overview=About_Building_a_Patch_File
+2 Providing Input to PATCHBLD=Providing_Input_to_PATCHBLD
+2 Command Line Syntax=Command_Line_Syntax
+2 Getting On-Line Help=Getting_On_Line_Help
+2 Specifying Which Files to Compare=Specifying_Which_Files_to_Compare
+2 Specifying Subdirectories=Specifying_Subdirectories
+2 Building ADD patches=Building_ADD_patches
+2 Changing the Names of the Output Files=Changing_the_Names_of_the_Output_Files
+2 Controlling Screen Output=Controlling_Screen_Output
+2 Password Protecting the Patch File=Password_Protecting_the_Patch_File
+2 Optimizing Build Speed/Patch Size=Optimizing_Build_Speed_Patch_Size
+2 Using Command Prompt Mode=Using_Command_Prompt_Mode
+2 Deciding to Use a Command File=Deciding_to_Use_a_Command_File
+2 Using the Configuration File=Using_the_Configuration_File
+2 The Documentation File=The_Documentation_File
+2 Reversing an Applied Patch=Reversing_an_Applied_Patch
+2 Patch File Verification=Patch_File_Verification
+2 Command Collisions=Command_Collisions
+2 Fatal Warnings=Fatal_Warnings
+2 Patch File Compression=Patch_File_Compression
+2 PBLD-DX's Use of XMS=PBLD_DX_s_Use_of_XMS
+1 RTPatch Build Wizard Interface
+2 Introduction=Build_wiz_Introduction
+2 Welcome=Step_1
+2 Old System=Step_2
+2 New System=Step_3
+2 Pre/Post Patch Actions=Step_4
+2 Smart Location=Step_5
+2 History Components=History_Patches
+2 General Options=Step_6
+2 File Groups=Step_7
+2 File Groups, Smart Location=Step_7_1
+2 File Groups, General Options=Step_7_2
+2 File Groups, Actions=Step_7_3
+2 EZPatch=Step_8
+2 MSI Settings=MSI_Settings
+2 Project Settings=Step_9
+2 Summary=Step_10
+1 Applying a Patch File
+2 Overview=About_Applying_a_Patch_File
+2 Command Line Syntax=Command_Line_Syntax_Apply
+2 Finding the Correct Files to Patch=Finding_the_Correct_Files_to_Patch
+2 Patching Open Files=Patching_Open_Files
+2 Verifying Patches are Correct=Verifying_Patches_are_Correct
+2 Spawning Patch=Spawning_Patch
+2 Spawning From a Windows Program=Spawning_From_a_Windows_Program
+2 Applying UNIX Style RTPatch Files=Applying_UNIX_Style_RTPatch_Files
+2 Keeping a Record of Applied Patches=Maintaining_a_Record_of_Applied_Patch_Files
+2 Command Line Options
+3 Quick Reference Card=Quick_Reference_Card
+3 Getting On-Line Help=Getting_On_Line_Help_Apply
+3 Listing Files to be Patched=Listing_Files_to_be_Patched
+3 Updating a Single File=Updating_a_Single_File
+3 Locating Files to Patch=Locating_Files_to_Patch
+3 Locating File Systems to Patch=Locating_File_Systems_to_Patch
+3 Controlling Screen Output=Controlling_Screen_Output_Apply
+3 Backing Up Affected Files=Backing_Up_Affected_Files
+3 Reading the Patch File from stdin=Reading_the_Patch_File_from_stdin
+3 Default Setting for PATCH=Default_Setting_for_PATCH
+3 Applying Multiple Patch Files=Applying_Multiple_Patch_Files
+3 Setting PATCH's Error Handling Behavior
+4 Ignoring Missing Files=Ignoring_Missing_Files
+4 Restoring the Old System on Error=Restoring_the_Old_System_on_Error
+4 Error Messages=Error_Messages
+4 Preventing the Application of Split Patch Files=Preventing_the_Application_of_Split_Patch_Files
+4 Ignoring the Hour Component of a Timestamp=Ignoring_the_Hour_Component_of_a_Timestamp
+4 Logging PATCH Errors to a File=Logging_PATCH_Errors_to_a_File
+4 Rerunning PATCH=Rerunning_PATCH
+1 PATCHBLD Command Files
+2 About Command Files=About_Command_Files
+2 Command File Syntax
+3 Rules=Rules
+3 Using Wildcards=Using_Wildcards
+3 Adding Comments=Adding_Comments
+3 Entering Numbers=Entering_Numbers
+2 Indicating Files to Patch
+3 Overiew=About_Indicating_Files_to_Patch
+3 Indicating Files Quickly=Indicating_Files_Quickly
+3 Indicating Files From Component Patches=Indicating_Files_From_Component_Patches
+3 Indicating Files in Complicated Trees
+4 Overview=Overview
+4 Specifying Directories=Specifying_Directories
+4 The INPLACE Command=The_INPLACE_Command
+4 Specifying Files to Modify=Specifying_Files_to_Modify
+4 Specifying Files to Add=Specifying_Files_to_Add
+4 Specifying Files to Delete=Specifying_Files_to_Delete
+4 Specifying Files That Require Renaming=Specifying_Files_That_Require_Renaming
+3 Indicating Separate Subsystems
+4 Overview=Overview_Indicating_Separate_Subsystems
+4 Applying a Patch to Multiple Subsystems=Applying_a_Patch_with_Multiple_Subsystems
+4 Creating a Command File for Multiple Subsystems=Creating_a_Command_File_for_Multiple_Subsystems
+3 Indicating a History of Upgrades
+4 Overview=Overview_History_of_Upgrades
+4 Creating a History Patch File=Creating_a_History_Patch_File
+4 History Patch File Example=History_Patch_File_Example
+4 History File Restrictions=History_File_Restrictions
+4 Using the RENAME Command in a History Patch=Using_the_RENAME_Command_in_a_History_Patch
+4 Import Tagging=Import_Tagging
+2 Registry/INI File-Based Searching
+3 Overview=Overview_Registry_INI_Searching
+3 Syntax for Registry/INI Based Searching=Syntax_for_Registry_INI_Based_Searching
+3 Update Directory When Using Systems=Update_Directory_When_Using_Systems
+3 Registry/INI Searching Examples
+4 Example: Using ROOTKEY=Example_Using_ROOTKEY
+4 Example: Using ROOTBASE=Example_Using_ROOTBASE
+4 Example: Using SYSTEMKEY=Example_Using_SYSTEMKEY
+4 Example: Using SYSTEMBASE=Example_Using_SYSTEMBASE
+4 Example: Using Windir()=Example_Using_Windir_
+4 Example: Using Sysdir()=Example_Using_Sysdir_
+2 Character Set Issues
+3 Overview=Overview_Character_Set_Issues
+3 Specifying Character Set=Specifying_Character_Set
+3 Example: Specifying a Character Set=Example_Specifying_a_Character_Set
+3 Character Sets in Patch Apply=Character_Sets_in_Patch_Apply
+2 Optimizing the Patch Build Process
+3 Overview=Overview_Optimizing_Patch_Building
+3 SPEED Command=SPEED_Command
+3 TYPE Command=TYPE_Command
+2 Specifying Individual File Processing
+3 Overview=Overview_Specifying_Individual_File_Processing
+3 Manually Grouping Files=Manually_Grouping_Files
+3 Setting Special Behavior=Setting_Special_Behavior
+2 Working with Serialized Files
+3 Overiew=Handling_Serialized_Files
+3 Retaining the Serial Number=Retaining_the_Serial_Number
+3 Inserting a Serial Number=Inserting_a_Serial_Number
+3 Replacing the Serial Number=Replacing_the_Serial_Number
+2 Patching MSI (Windows Installer) Installations
+3 MSI Overview=MSI_Overview
+3 MSI Utilities=MSI_Utilities
+3 Modifying the Windows Installer (MSI) database=Modifying_the_Windows_Installer_MSI_database_
+2 Advanced PATCHBLD Options
+3 Adding Comments to a Patch File=Adding_Comments_to_a_Patch_File
+3 Protecting a Patch File with a Password=Protecting_a_Patch_File_with_a_Password
+3 Controlling PATCHBLD's Output=Controlling_PATCHBLD_s_Output
+3 Updating Part of a System=Updating_Part_of_a_System
+3 Disabling Patch File Compression=Disabling_Patch_File_Compression
+3 Patching Compressed Files=Patching_Compressed_Files
+3 Setting Allowable PATCH User Level=Setting_Aloowable_PATCH_Userlevel
+3 Logging PATCH Error Messages to a File=Logging_PATCH_Error_Messages_to_a_File
+3 Preventing PATCH From Applying Split Patch Files=Preventing_PATCH_From_Applying_Split_Patch_Files
+3 Suppressing PATCH Warning Messages=Suppressing_PATCH_Warning_Messages
+3 Controlling the Patch Process=Controlling_the_Patch_Process
+3 Executing Programs While Patching=Executing_Programs_While_Patching
+3 Allowing Duplicate File Names=Allowing_Duplicate_File_Names
+3 Squeezing the Patch File=Squeezing_the_Patch_File
+3 Logging Build Errors to a File=Logging_Build_Errors_to_a_File
+3 Suppressing Non-Fatal Warnings=Suppressing_Non_Fatal_Warnings
+3 Patching Bound Executables=Patching_Bound_Executables
+3 Checking File Attributes=Overview_Checking_File_Attributes
+3 Retaining User-Applied Attributes=Retaining_User_Applied_Attributes
+1 EZPatch
+2 Overview=Overview_EZPatch
+2 EZPatch Package Contents=EZPatch_Files
+2 EZPatch Syntax=EZPatch_Syntax
+2 The PBIND Command File
+3 Overview=Overview_pbind_Command_File
+3 [General] Section=_General_Section
+3 [Welcome] Section=_Welcome_Section
+3 [Success] Section=_Success_Section
+3 [Dialog Help] Section=_Dialog_Help_Section
+3 Popup Text Windows=Popup_Text_Windows
+3 Limitations=Limitations
+3 To Include the DLL or Not=To_Include_the_DLL_or_Not
+3 Unbinding a Patch File=Unbinding_a_Patch_File
+3 Using a Background Bitmap=Using_a_Background_Bitmap
+3 Example PBIND Command File=Example_pbind_Command_File
+3 PBIND Keywords
+4 Bitmap=Bitmap
+4 Brush=Brush
+4 Color=Color
+4 Compress=Compress
+4 ConfirmText=ConfirmText
+4 ConfirmTitle=ConfirmTitle
+4 DefaultFile=DefaultFile
+4 DialogHelpTitle=DialogHelpTitle
+4 DialogTitle=DialogTitle
+4 DirectoryPrompt=DirectoryPrompt
+4 FileFilters=FileFilters
+4 FullPaths=FullPaths
+4 HPosPct=HPosPct
+4 Icon=Icon
+4 IncludeDLL=IncludeDLL
+4 LogDir=LogDir
+4 LogFile=LogFile
+4 MainTitle=MainTitle
+4 OptionChange=OptionChange
+4 OptionDefault=OptionDefault
+4 OptionFromFile=OptionFromFile
+4 OptionSet=OptionSet
+4 OutputFile=OutputFile
+4 PatchFile=PatchFile
+4 Platform=Platform
+4 ProgressTitle=ProgressTitle
+4 Reboot=Reboot
+4 SuccessTitle=SuccessTitle
+4 SearchAll=SearchAll
+4 SearchNet=SearchNet
+4 Silent=Silent
+4 TagFilters=TagFilters
+4 VPosPct=VPosPct
+4 WelcomeTitle=WelcomeTitle
+3 Specifying Apply Options
+4 Specifying Apply Options at Build Time=Specifying_Apply_Options_at_Build_Time
+4 Specifying Options at Bind Time=Specifying_Options_at_Bind_Time
+4 Allowing the User to Change Options at Apply Time=Allowing_the_User_to_Change_Options_at_Apply_Time
+3 Finding Files with EZPatch
+4 No User Intervention=No_User_Intervention
+4 With User Intervention=With_User_Intervention
+1 Utility Programs
+2 Comparing Files=Comparing_Files
+2 Finding Serial Numbers=Finding_Serial_Numbers
+2 Splitting Files Across Disks=Splitting_Files_Across_Disks
+2 Compression/Archival Utilities=Compression_Archival_Utilities
+1 PATCHBLD Commands
+2 Overview=Overview_patchbld_Commands
+2 ADD=ADD
+2 ADDTODIR=ADDTODIR
+2 ADDWITHFILE=ADDWITHFILE
+2 ALLOWBIND=ALLOWBIND
+2 ALLOWDUPLICATES=ALLOWDUPLICATES
+2 ALLOWSPLIT/NOALLOWSPLIT=ALLOWSPLIT_NOALLOWSPLIT
+2 ATTRIBUTE=ATTRIBUTE
+2 BACKUP=BACKUP
+2 BEGINFILE=BEGINFILE
+2 BEGINSYSTEM=BEGINSYSTEM
+2 CHARSET=CHARSET
+2 CHECKATTRIBUTE/NOCHECKATTRIBUTE=CHECKATTRIBUTE_NOCHECKATTRIBUTE
+2 CHECKTIMEDATE/NOCHECKTIMEDATE=CHECKTIMEDATE_NOCHECKTIMEDATE
+2 COMMENT=COMMENT
+2 COMPRESS/NOCOMPRESS=COMPRESS_NOCOMPRESS
+2 CONFIRM/NOCONFIRM=CONFIRM_NOCONFIRM
+2 CREATESUBDIR/NOCREATESUBDIR=CREATESUBDIR_NOCREATESUBDIR
+2 DELETE=DELETE
+2 DOAFTER=DOAFTER
+2 DOAFTERALL=DOAFTERALL
+2 DOBEFORE=DOBEFORE
+2 DOBEFOREALL=DOBEFOREALL
+2 DOCFILE/NODOCFILE=DOCFILE_NODOCFILE
+2 ECHO/NOECHO=ECHO_NOECHO
+2 ENDFILE=ENDFILE
+2 ENDSYSTEM=ENDSYSTEM
+2 ERRORFILE=ERRORFILE
+2 FILE=FILE
+2 GROUP=GROUP
+2 HELP=HELP
+2 HISTORY=HISTORY
+2 IGNORE=IGNORE
+2 IGNOREBYTES=IGNOREBYTES
+2 IGNOREMISSING/NOIGNOREMISSING=IGNOREMISSING_NOIGNOREMISSING
+2 IMPORT=IMPORT
+2 INPLACE=INPLACE
+2 LOGBLDERRS/NOLOGBLDERRS=LOGBLDERRS_NOLOGBLDERRS
+2 LONGNAMES/NOLONGNAMES=LONGNAMES_NOLONGNAMES
+2 MAINTENANCE=MAINTENANCE
+2 MESSAGE/NOMESSAGE=MESSAGE_NOMESSAGE
+2 MSIDATABASE=MSIDATABASE
+2 MSIFILE=MSIFILE
+2 NAME=NAME
+2 NEWDIR=NEWDIR
+2 NEWIGNORE=NEWIGNORE
+2 OLDDIR=OLDDIR
+2 OLDIGNORE=OLDIGNORE
+2 OUTPUT=OUTPUT
+2 PARTIAL/NOPARTIAL=PARTIAL_NOPARTIAL
+2 PASSWORD=PASSWORD
+2 PATCHFILE/NOPATCHFILE=PATCHFILE_NOPATCHFILE
+2 PATCHQUIET/PATCHVERBOSE=PATCHQUIET_PATCHVERBOSE
+2 PATCHWARNINGS/NOPATCHWARNINGS=PATCHWARNINGS_NOPATCHWARNINGS
+2 PATHSEARCH/NOPATHSEARCH=PATHSEARCH_NOPATHSEARCH
+2 PREREGSCRIPT=PREREGSCRIPT
+2 QUIET=QUIET
+2 RADIX=RADIX
+2 READBYTES=READBYTES
+2 RECYCLEBIN/NORECYCLEBIN=RECYCLEBIN_NORECYCLEBIN
+2 REGSCRIPT=REGSCRIPT
+2 RENAME=RENAME
+2 RETAINBYTES=RETAINBYTES
+2 ROOTBASE=ROOTBASE
+2 ROOTKEY=ROOTKEY
+2 SELFREG/NOSELFREG=SELFREG_NOSELFREG
+2 SHAREDFILE/NOSHAREDFILE=SHAREDFILE_NOSHAREDFILE
+2 SPEED=SPEED
+2 SQUEEZE=SQUEEZE
+2 SUBDIRSEARCH/NOSUBDIRSEARCH=SUBDIRSEARCH_NOSUBDIRSEARCH
+2 SYSTEMBASE=SYSTEMBASE
+2 SYSTEMKEY=SYSTEMKEY
+2 SYSTEMKEYBASE=SYSTEMKEYBASE
+2 SYSTEMNAME=SYSTEMNAME
+2 SYSTEMTAG=SYSTEMTAG
+2 TEMPDIR=TEMPDIR_BUILD
+2 TEMPFILE=TEMPFILE
+2 TESTPATCHES/NOTESTPATCHES=TESTPATCHES_NOTESTPATCHES
+2 TYPE=TYPE
+2 TZCHECK/NOTZCHECK=TZCHECK_NOTZCHECK
+2 UNDO/NOUNDO=UNDO_NOUNDO
+2 UNICODE/NOUNICODE=UNICODE_NOUNICODE
+2 UNIQUE=UNIQUE
+2 UPDATETIMESTAMP/NOUPDATETIMESTAMP=UPDATETIMESTAMP
+2 USERLEVEL=USERLEVEL
+2 VERBOSE=VERBOSE
+2 WARNINGS/NOWARNINGS=WARNINGS_NOWARNINGS
+2 WORKFILE=WORKFILE
+1 PATCH Options
+2 Overview=Overview_patch_Options
+2 ALLOWSPLIT/NOALLOWSPLIT=ALLOWSPLIT_NOALLOWSPLIT_PATCH
+2 BACKUP/NOBACKUP=BACKUP_NOBACKUP
+2 CONFIRM/NOCONFIRM=CONFIRM_NOCONFIRM_PATCH
+2 DRIVE=DRIVE
+2 ERRORFILE/NOERRORFILE=ERRORFILE_NOERRORFILE
+2 FILE=FILE_PATCH_KEYWORD
+2 GETFROMSTDIN=GETFROMSTDIN
+2 HELP=HELP_PATCH_KEYWORDS
+2 IGNOREMISSING/NOIGNOREMISSING=IGNOREMISSING_NOIGNOREMISSING_PATCH
+2 JUSTCHECKFILES=JUSTCHECKFILES
+2 LIST=LIST
+2 NODELAYCOPY=NODELAYCOPY
+2 MESSAGE/NOMESSAGE=MESSAGE_NOMESSAGE_PATCH
+2 PATHSEARCH/NOPATHSEARCH=PATHSEARCH_NOPATHSEARCH_PATCH
+2 QUIET=QUIET_PATCH_KEYWORDS
+2 RECYCLEBIN=RECYCLEBIN
+2 SUBDIRSEARCH/NOSUBDIRSEARCH=SUBDIRSEARCH_NOSUBDIRSEARCH_PATCH
+2 TEMPDIR=TEMPDIR
+2 TZCHECK/NOTZCHECK=TZCHECK_NOTZCHECK_PATCH
+2 UNDO/NOUNDO=UNDO_NOUNDO_PATCH_KEYWORDS
+2 VERBOSE=VERBOSE_PATCH_KEYWORDS
+2 WARNREBOOT=WARNREBOOT
+1 Patch Apply DLL API
+2 Calling the Apply DLL from C/C++=Calling_the_Apply_DLL_from_C_C_
+2 Creating a CallBack Function=Creating_a_CallBack_Function
+2 Id Integers and What They Mean=Id_Integers_and_What_They_Mean
+2 Import Libraries=Import_Libraries
+2 The -JUSTCHECKFILES Switch=The_JUSTCHECKFILES_Switch
+2 Character Set Issues=Character_Set_Issues
+2 Patch Apply Interface Module=Patch_Apply_Interface_Module
+2 No-CallBack Apply Functions=No_CallBack_Apply_Functions
+2 Examples
+3 Calling the Apply DLL from C=Example_-_Calling_Patch_Apply_from_C
+3 Calling the Apply DLL From Delphi=Calling_the_Apply_DLL_From_Delphi
+3 Calling the Apply DLL From Visual Basic=Calling_the_Apply_DLL_From_Visual_Basic
+3 Calling the Apply DLL From VB.Net=Calling_the_Apply_DLL_From_VB_Net
+2 Using RTPatch with InstallShield Professional
+3 Calling the InstallShield DLL=Calling_the_Install_Shield_DLL
+3 The ISRTPatch() Function=The_ISRTPatch_Function
+3 Default Settings for ISRTPatch()=Default_Settings_for_ISRTPatch_
+3 Uninstallation Issues
+4 Enabling the Complete Uninstallation of an Application=Enabling_the_Complete_Uninstallation_of_an_Application
+4 Updating the Uninstall Log File=Updating_the_Uninstall_Log_File
+2 Managing String Output
+3 Editing Patch Apply Strings=Editing_Patch_Apply_Strings
+1 Binding to a Custom Interface
+2 Overview=Overview_Binding_to_Custom_Interface
+2 Step-By-Step Instructions=Step_By_Step_Instructions
+2 Custom PBind Example=Custom_PBind_Example
+2 Example MSVC Project=Example_MSVC_Project
+1 Updating the Registry and INI Files
+2 Overview=OverviewRegistry_Scripting
+2 Registry Script Format=Registry_Script_Format
+2 Macro Expansion Language=Macro_Expansion_Language
+2 Preset Macro Variables=Preset_Macro_Variables
+2 Numeric Evaluator=Numeric_Evaluator
+2 Registry Script Error Handling=Registry_Script_Error_Handling
+2 Registry Script Debugging=Registry_Script_Debugging
+2 Sample Registry Script=Sample_Registry_Script
+2 Log for Sample Registry Script=Log_for_Sample_Registry_Script
+1 Web RTPatch
+2 Introduction=Introduction_RTPatch_Web
+2 Description=Description_RTPatch_Web
+2 End-User Experience=End_User_Experience
+2 Customizing Web RTPatch=Customizing_RTPatch_Web
+2 Description of Parameters=Description_of_Parameters
+2 How to Publish a Patch on the Web=How_tp_Publish_a_Patch_on_the_Web
+2 Other Relevant HTML Parameters=Other_Relevant_HTML_Parameters
+2 Removing Installed Controls=Removing_Installed_Controls
+2 Restarting a Web RTPatch=Restarting_a_patch
+2 Netscape 6 Support=Netscape_6_Support
+2 Code Signing
+3 Background=Background
+3 Building a Safe Control=Building_a_Safe_Control
+3 Detailed Procedure=Detailed_Procedure_
+3 Design Trade-Offs=Design_Trade_Offs2
+3 System Requirements=System_Requirements
+3 Testing Safe Controls=Testing_Safe_Controls
+3 Optional Safe Control Method=Optinal_Safe_Control_Method
+1 Auto RTPatch
+2 Introduction=Introduction
+2 Packages=Options
+2 Setting up the Server
+3 Auto RTPatch Manager=Creating_signatures
+3 Commands=Commands
+2 Setting up the Client
+3 Installing the Client=Installing_the_Client_General
+3 Enabling Proxy Support=NewTopic_1
+3 Installing the Client from InstallShield Pro=Installing_the_Client
+3 Registry Settings=Registry_Settings
+3 Executing from the Command Line=Running_the_Client
+3 Auto RTPatch Client DLL API=Auto_RTPatch_Client_DLL_API
+3 Error Return Codes=Error_Return_Codes
+1 Appendices
+2 Frequently Asked Questions=Frequently_Asked_Questions
+2 Error and Warning Messages
+3 Patch Build Errors=PATCHBLD_Errors
+3 Patch Build Warnings=PATCHBLD_Warnings
+3 Patch Apply Errors and Warnings=Patch_Apply_Errors
+3 Split and Paste Errors=Split_and_Paste_Errors
+3 Utility Errors=Utility_Errors1
+3 Web RTPatch Errors=Web_RTPatch_Errors
+2 Quick Reference
+3 PATCHBLD Quick Reference=patchbld_Quick_Reference
+3 PATCH Quick Reference=patch_Quick_Reference

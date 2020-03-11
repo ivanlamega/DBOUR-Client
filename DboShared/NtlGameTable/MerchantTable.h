@@ -1,0 +1,65 @@
+#pragma once
+
+#include "Table.h"
+#include "NtlItem.h"
+
+const DWORD		DBO_MAX_LENGTH_MERCHANT_NAME_TEXT = 16;
+const DWORD		DBO_MERCHANT_ITEM_CNT = 36;
+
+#pragma pack(push, 4)
+struct sMERCHANT_TBLDAT : public sTBLDAT
+{
+public:
+	WCHAR			wszNameText[DBO_MAX_LENGTH_MERCHANT_NAME_TEXT + 1];
+	BYTE			bySell_Type;
+	TBLIDX			Tab_Name;
+	DWORD			dwNeedMileage;
+	TBLIDX			aitem_Tblidx[DBO_MERCHANT_ITEM_CNT];
+	TBLIDX			requiredItemIdx[DBO_MERCHANT_ITEM_CNT];
+	BYTE			byRequiredItemStack[DBO_MERCHANT_ITEM_CNT];
+
+	DWORD			dwRequiredZenny[DBO_MERCHANT_ITEM_CNT];
+
+
+public:
+
+	virtual int GetDataSize()
+	{
+		return sizeof(*this) - sizeof(void*);
+	}
+};
+#pragma pack(pop)
+
+class CMerchantTable : public CTable
+{
+public:
+	CMerchantTable(void);
+	virtual ~CMerchantTable(void);
+
+	bool Create(DWORD dwCodePage);
+	void Destroy();
+
+protected:
+	void Init();
+
+public:
+	sTBLDAT* FindData(TBLIDX tblidx);
+	static TBLIDX FindMerchantItem(sMERCHANT_TBLDAT* psTbldat, BYTE byIndex);
+
+protected:
+	WCHAR** GetSheetListInWChar() { return &(CMerchantTable::m_pwszSheetList[0]); }
+	void* AllocNewTable(WCHAR* pwszSheetName, DWORD dwCodePage);
+	bool DeallocNewTable(void* pvTable, WCHAR* pwszSheetName);
+	bool AddTable(void* pvTable, bool bReload);
+	bool SetTableData(void* pvTable, WCHAR* pwszSheetName, std::wstring* pstrDataName, BSTR bstrData);
+
+public:
+
+	virtual bool				LoadFromBinary(CNtlSerializer& serializer, bool bReload);
+
+	virtual bool				SaveToBinary(CNtlSerializer& serializer);
+
+
+private:
+	static WCHAR* m_pwszSheetList[];
+};

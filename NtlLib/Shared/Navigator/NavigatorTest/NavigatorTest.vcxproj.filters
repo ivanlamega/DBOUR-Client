@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Common\Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Common\PreCompiledHeader">
+      <UniqueIdentifier>{3749b62e-50c2-449a-bd32-6889c50084d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{eb9f7220-6e44-4775-9a6a-c9577088b64f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\WinMain">
+      <UniqueIdentifier>{58963579-1430-4ba3-a0c7-4b2e78f2725d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\CApiWinApp">
+      <UniqueIdentifier>{311f6f19-b389-4ea9-9a08-101cbe04fcd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\CApiWinApp\MessageMap">
+      <UniqueIdentifier>{5643ba3b-a7f0-43de-a008-8806a1dd1de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NavigatorExtention">
+      <UniqueIdentifier>{3b337842-ca71-459c-b2ac-088535d07544}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NavigatorTest.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Common\PreCompiledHeader</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Framework\WinMain</Filter>
+    </ClCompile>
+    <ClCompile Include="CApiWinApp.cpp">
+      <Filter>Framework\CApiWinApp</Filter>
+    </ClCompile>
+    <ClCompile Include="CApiWinApp_AboutWndProc.cpp">
+      <Filter>Framework\CApiWinApp</Filter>
+    </ClCompile>
+    <ClCompile Include="CApiWinApp_Command.cpp">
+      <Filter>Framework\CApiWinApp</Filter>
+    </ClCompile>
+    <ClCompile Include="CApiWinApp_Simulate.cpp">
+      <Filter>Framework\CApiWinApp</Filter>
+    </ClCompile>
+    <ClCompile Include="CApiWinApp_StatusWindow.cpp">
+      <Filter>Framework\CApiWinApp</Filter>
+    </ClCompile>
+    <ClCompile Include="CApiWinApp_Window.cpp">
+      <Filter>Framework\CApiWinApp</Filter>
+    </ClCompile>
+    <ClCompile Include="CApiWinApp_WndProc.cpp">
+      <Filter>Framework\CApiWinApp</Filter>
+    </ClCompile>
+    <ClCompile Include="OnAbout.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OnCreate.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OnDestroy.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OnKeyUp.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OnLButtonDown.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OnLButtonUp.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMouseMove.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OnMove.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OnPaint.cpp">
+      <Filter>Framework\CApiWinApp\MessageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="CApiRenderer.cpp">
+      <Filter>NavigatorExtention</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NavigatorTest.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Common\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Common\PreCompiledHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="WinMain.h">
+      <Filter>Framework\WinMain</Filter>
+    </ClInclude>
+    <ClInclude Include="CApiWinApp.h">
+      <Filter>Framework\CApiWinApp</Filter>
+    </ClInclude>
+    <ClInclude Include="CApiRenderer.h">
+      <Filter>NavigatorExtention</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NavigatorTest.ico">
+      <Filter>Common\Resource</Filter>
+    </None>
+    <None Include="small.ico">
+      <Filter>Common\Resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NavigatorTest.rc">
+      <Filter>Common\Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+LogFileName = rtptest.log
+Silent = TRUE
+LogFile = TRUE
+LogFileDir = 3
+SearchAll = TRUE
+CompleteCaption = Update completed.
+FailureCaption = Failure occurred.
+WaitCaption = Please wait...

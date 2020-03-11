@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="ToolUi">
+      <UniqueIdentifier>{946a1871-8464-4186-857f-45a3ab9fe9ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{c5965599-b13d-4c66-b284-e501e0426376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{28b86431-2f26-4d43-8ec8-500aa15d5cf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Etc">
+      <UniqueIdentifier>{3c776cac-b6d3-48fe-be55-faae592f43b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{73d2f181-3973-4be1-97bc-d4d71913428e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{92b1b6b4-92f7-47c3-a475-b503b032aa97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreFrameWorkMfc">
+      <UniqueIdentifier>{61ebfb53-553d-41c7-b79d-a897c2d71338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{7ac2237d-6797-464e-be99-dc87fe4a5b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToolData">
+      <UniqueIdentifier>{9a379dd1-5752-4e5e-9503-322756b5c436}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CharacterEditor.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\CharacterEditor.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\CharacterEditorDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ReadMe.txt">
+      <Filter>Etc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CharacterEditor.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InPlaceComboBoxImp.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="InPlaceEditImp.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="InPlaceEditPropItemString.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyAnimData.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyItem.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyListCtrl.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="Sizecbar.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="SizingTabCtrlBar.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartString.cpp">
+      <Filter>ToolUi</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationSetDialog.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationTreeDialog.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterEditorView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAssetOpen.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="DboCharacterApplication.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterEditor.cpp">
+      <Filter>CoreFrameWorkMfc</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterEditorDoc.cpp">
+      <Filter>CoreFrameWorkMfc</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>CoreFrameWorkMfc</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolData.cpp">
+      <Filter>ToolData</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InPlaceComboBoxImp.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="InPlaceEditImp.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="InPlaceEditPropItemString.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyAnimData.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyItem.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyList.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyListCtrl.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="Sizecbar.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="SizingTabCtrlBar.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartString.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="UserMessageID.h">
+      <Filter>ToolUi</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationSetDialog.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationTreeDialog.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterEditorView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAssetOpen.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="DboCharacterApplication.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterEditor.h">
+      <Filter>CoreFrameWorkMfc</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterEditorDoc.h">
+      <Filter>CoreFrameWorkMfc</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>CoreFrameWorkMfc</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolData.h">
+      <Filter>ToolData</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\CharacterEditor.manifest">
+      <Filter>Etc</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

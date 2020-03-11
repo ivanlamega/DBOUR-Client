@@ -1,0 +1,386 @@
+#----------------------------------------------------------------------------#
+#                                                                            #
+#                          PATCHBLD HELP TEXT                                #
+#                                                                            #
+#                  RTPatch Professional, Version 6.50                        #
+#                                                                            #
+#        (C) Copyright Pocket Soft Inc. 1991-2002.  All Rights Reserved.     #
+#                                                                            #
+#   Lines from this file are printed 23 lines per screen                     #
+#   Lines which begin with a "#" are not printed                             #
+#   The last screenful of messages should contain at most 22 lines of text   #
+#                                                                            #
+#----------------------------------------------------------------------------#
+                          -------------------------
+                          |     PATCHBLD Help     |
+                          -------------------------
+
+Command Line Usage                                             Page 1 of 16
+------------------
+
+     Syntax:      PATCHBLD [Options] <OldSystem> <NewSystem>
+
+     Options:     /C[OMMAND]             - Enter Command Prompt Mode
+                  /H[ELP] or /?          - Display Help Text
+                  /O[UTPUT]:Name         - Specify Output Files's Prefix Name
+                                             and/or Directory
+                  /P[ASSWORD]:"PassWord" - Protect Patch File with Password
+                  /Q[UIET]               - Quiet Mode
+                  /T[ESTPATCHES]         - Enable Internal Testing of Patches
+                  /V[ERBOSE]             - Verbose Mode
+
+     <OldSystem>  System specifications for Original and Updated systems.
+     <NewSystem>  Either file or directory names may be specified.
+                  Append /S to directory names to process subdirectories,
+                  append /F to process subdirectories and keep the structure
+     	          fixed.  Wildcards may be used in filenames.
+#----------------------------------------------------------------------------#
+
+Command File Usage                                             Page 2 of 16
+------------------
+
+     PATCHBLD @<CommandFileName>
+
+
+Commands
+--------
+
+     ADD <Name> [,<Name>,...]         Specify a file added in updated system
+				      
+     ADDTODIR [<Directory]	      Tell PATCH to place the new file in the
+                                      named directory instead of the update
+     			              directory.  See also CREATESUBDIR.
+
+     ADDWITHFILE [<FileName>]	      Tell PATCH to place the new file in the
+                                      same directory as the named file.
+     ALLOWBIND                        Inform PATCHBLD that this file is an
+                                      executable that may be "bound" on the
+				      end user's machine
+
+#----------------------------------------------------------------------------#
+
+Command File Usage                                             Page 3 of 16
+------------------
+
+     ALLOWDUPLICATES                  Tell PATCH to allow multiple files
+                                      with the same name to be patched.
+
+     ALLOWSPLIT			      Toggle PATCH allowing this patchfile to
+     NOALLOWSPLIT                     be split across multiple disks
+
+     ATTRIBUTE <Attr> [,<Attr>,...]   Tell PATCH which file attributes to
+                                      retain from the end user's machine.
+                                      <Attr> can be any of HIDDEN, READONLY,
+				      SYSTEM, SHAREABLE, SECURITY, NONE.
+
+     BACKUP [<Directory>]             Toggle "Backup Original Files"
+     NOBACKUP                         behavior of PATCH program
+                                      Default: NOBACKUP
+
+     BEGINSYSTEM                      Mark the beginning of a system block
+
+     BEGINFILE                        Mark the beginning of a file block
+
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 4 of 16
+--------
+
+     CHARSET ANSI                     Indicate the character set in which
+     CHARSET OEM                      the command file is written
+                                      Default: CHARSET OEM
+
+     CHECKATTRIBUTE                   Toggle whether patch is created for
+     NOCHECKATTRIBUTE                 file even if only attribute changed
+                                      Default: NOCHECKATTRIBUTE
+
+
+     CHECKTIMEDATE                    Toggle whether patch is created for
+     NOCHECKTIMEDATE                  file even if only Time/Date stamp
+                                      has changed
+                                      Default: NOCHECKTIMEDATE
+
+     COMMENT "<String>"               Place a comment in the patch file
+
+     COMPRESS                         Toggle whether patch file is
+     NOCOMPRESS                       automatically compressed.
+                                      Default: COMPRESS
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 5 of 16
+--------
+
+     CONFIRM                          Toggle whether PATCH requests user
+     NOCONFIRM                        confirmation on SYSTEM location
+                                      Default: CONFIRM
+
+     CREATESUBDIR		      Toggles whether PATCH creates
+     NOCREATESUBDIR                   directories from ADDTODIR commands
+                                      if they are not found.
+                                      Default: NOCREATESUBDIR
+
+     DELETE <Name> [,<Name>,...]      Specify a file deleted from original
+
+     DOCFILE
+
+     DOBEFORE <Cmd>                   Specifies a DOS command that is to be
+     DOAFTER <Cmd>                    executed either before or after 
+                                      patching the current file block.
+
+
+
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 6 of 16
+--------
+
+     DOBEFOREALL <Cmd>                Specifies a DOS command that is to be
+     DOAFTERALL <Cmd>                 executed either before or after
+                                      applying this patchfile
+
+     NODOCFILE                        Toggle creation of the document file
+                                      Default: DOCFILE
+
+     ECHO                             Toggle display of the PATCHBLD
+     NOECHO                           command file
+                                      Default: NOECHO
+
+     ENDFILE                          Mark the end of a file block
+
+     ENDSYSTEM			      Mark the end of a system block
+
+     ERRORFILE                        Toggle whether PATCH writes error
+     NOERRORFILE                      messages to an error file.
+                                      Default: NOERRORFILE
+
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 7 of 16
+--------
+
+     FILE <Name> [,<Name>,...]        Specify the name of a file to update
+
+     GROUP                            Group a set of files together
+
+     HELP                             Display help text
+
+     HISTORY                          Toggle whether this run of PATCHBLD
+     NOHISTORY                        is creating a History Patch File
+                                      Default: NOHISTORY
+
+     IGNORE <Name> [,<Name>,...]      Do not process file in either system
+
+     IGNOREBYTES <Position> <Length>  Ignore a string of bytes in old file
+
+     IGNOREMISSING                    Toggle "Error Condition if File is
+     NOIGNOREMISSING                  Missing" behavior of PATCH program
+                                      Default: NOIGNOREMISSING
+
+
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 8 of 16
+--------
+
+     IMPORT <PatchFile> [(Tag)] [<Entry>,...]
+				      Import data from a patch file
+     					
+     INPLACE                          Indicates that full path names
+                                      (relative to OLDIR/NEWDIR) should be
+                                      placed in the patchfile
+
+     LOGBLDERRS                       Indicates that any errors encountered
+     NOLOGBLDERRS                     by PATCHBLD should be written to a file
+                                      called "patchbld.err"
+                                      Default: NOLOGBLDERRS
+
+     LONGNAMES                        Use Long Filenames
+
+     MESSAGE                          Toggle "Print Message on Error"
+     NOMESSAGE                        behavior of PATCH program
+                                      Default: MESSAGE
+
+
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 9 of 16
+--------
+     NEWDIR <DirectorySpec> [,<DirectorySpec>,...] Specify old and new
+     OLDDIR <DirectorySpec> [,<DirectorySpec>,...] system directories
+
+          Where a DirectorySpec is of the form:
+    
+            <DirectoryName> [SubDirectorySpec]
+            
+          and a SubDirectorySpec is one of the following:
+    
+            (1) /S - Include all subdirectories
+
+	    (2) /F - Same as /S, but keep subdirectories fixed
+    
+            (3) <DirectorySpec> [,<DirectorySpec>,...] - Specify Explicitly
+
+     NAME <NewName>                   Specify entry name for file or group 
+                                      of files
+
+     NEWIGNORE <Name> [,<Name>,...]   Do not process file in new system
+     OLDIGNORE <Name> [,<Name>,...]   Do not process file in old system
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 10 of 16
+--------
+
+
+     NOWARNINGS                       Prevent PATCHBLD from issuing nonfatal
+                                      warnings
+
+     OUTPUT <Name>                    Specify prefix name and/or directory
+                                      for PATCHBLD's output files
+
+     PARTIAL                          Toggle whether NEWDIR directories
+     NOPARTIAL                        contain a full or partial new system
+                                      Default: NOPARTIAL
+
+     PASSWORD "<String>"              Password Protect the Patch File
+
+     PATCHFILE                        Toggle creation of the Patch File
+     NOPATCHFILE                      Default: PATCHFILE
+
+     PATCHQUIET                       Toggle level of information 
+     PATCHVERBOSE                     displayed by PATCH program
+                                      Default: VERBOSE
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 11 of 16
+--------
+     PATHSEARCH                       Toggle whether PATCH will search
+     NOPATHSEARCH                     PATH for files to be patched
+                                      Default: PATHSEARCH
+
+     PATCHWARNINGS                    Toggle whether PATCH will issue
+     NOPATCHWARNINGS                  nonfatal warnings
+                                      Default: PATCHWARNINGS
+
+     PREREGSCRIPT <FileName>          Specify the registry/ini script to be
+                                      embedded in the patchfile and processed
+                                      before a patch application
+
+     QUIET                            Do not display processing information
+
+     RADIX                            Specify the radix for numbers. Default
+                                      radix is base 10.
+
+     READBYTES <File> <FilePos> <Length> <NewPos>  Read a string of bytes 
+                                      from a file and place the bytes in 
+                                      the updated file
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 12 of 16
+--------
+
+     REGSCRIPT <FileName>             Specify the registry/ini script to be
+                                      embedded in the patchfile and processed
+                                      after a successful patch application
+
+     RENAME <Old Name> <New Name>     Specify file to patch that is renamed
+
+     RETAINBYTES <Pos> <Length> [<NewPos>]  Retain string of bytes from 
+                                            old file
+
+     ROOTBASE <num>                   Specify the number of directory levels
+                                      between the apply directory and the
+				      file specified by the ROOTKEY registry
+                                      key
+
+     ROOTKEY <key>                    Specifies a registry or ini file entry
+                                      to be used by PATCH in locating the
+                                      update directory
+
+
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 13 of 16
+--------
+
+     SPEED <num>                      Trade-off between build time and
+                                      patchfile size.  <num> is between
+                                      0 and 10 inclusive
+
+     SQUEEZE                          Tells PATCHBLD to use an alternate
+                                      encoding mechanism which is MUCH slower
+                                      but sometimes produces smaller patches
+     SUBDIRSEARCH                     Toggle whether PATCH searches 
+     NOSUBDIRSEARCH                   subdirectories of target directory 
+                                      for files
+                                      Default: SUBDIRSEARCH
+
+     SYSTEMBASE <num>                 Specify the number of directory levels
+                                      between the system base directory
+                                      and the system tag
+
+     SYSTEMKEY <key>                  Specifies a registry or ini file entry
+                                      to be used by PATCH in locating the
+                                      directory for the current system
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 14 of 16
+--------
+
+     SYSTEMKEYBASE <num>              Specify the number of directory levels
+                                      between the system base directory and
+				      the file specified by the SYSTEMKEY
+                                      registry key
+
+     SYSTEMNAME <name>                Specify the name of the system
+
+     SYSTEMTAG <file>                 Specify the tag for a system.  This
+                                      file will be located on the end user's
+                                      machine to locate a system.
+
+     TEMPFILE <file>		      Specify a file that will be created
+                                      at the beginning of a PATCH run and
+                                      deleted at the end.
+
+     TESTPATCHES                      Toggle whether PATCHBLD internally
+     NOTESTPATCHES		      tests generated patches
+                                      Default: NOTESTPATCHES
+
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 15 of 16
+--------
+     TYPE <char>                      Specifies one of three file types
+                                      for use by the PATCHBLD program.
+                                      Choices are N (normal), E (executable)
+                                      and A (automatic choice between N and E)
+
+
+     TZCHECK                          Toggle whether PATCH checks the
+     NOTZCHECK                        timezone for file timestamps
+                                      Default: TZCHECK
+
+     UNDO                             Toggle "Global Undo of Patches on
+     NOUNDO                           Error" behavior of PATCH program
+                                      Default: NOUNDO
+
+     UNICODE                          Toggle whether PATCHBLD uses Unicode
+     NOUNICODE                        for file names in patchfiles
+                                      Default: NOUNICODE
+
+     UNIQUE                           Tells PATCHBLD to use a unique output
+                                      patchfile name
+#----------------------------------------------------------------------------#
+
+Commands                                                       Page 16 of 16
+--------
+
+     USERLEVEL <Level>                Set PATCH user level. Level can be one
+                                      of ADVANCED, BASIC, BACKUP, or NONE
+
+     VERBOSE                          Display Processing Information
+
+
+     WORKFILE <Name>                  Specify name/directory for PATCHBLD's
+                                      temporary overflow storage file.
+#----------------------------------------------------------------------------#
+
